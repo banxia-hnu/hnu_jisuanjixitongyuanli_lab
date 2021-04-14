@@ -1,0 +1,140 @@
+Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+41
+2959
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+zjw_kongzhiqi
+# storage
+db|zjw_kongzhiqi.(0).cnf
+db|zjw_kongzhiqi.(0).cnf
+# case_insensitive
+# source_file
+zjw_kongzhiqi.bdf
+5c606a22c3589efbd886d97e96d7010
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# entity
+7474
+# storage
+db|zjw_kongzhiqi.(1).cnf
+db|zjw_kongzhiqi.(1).cnf
+# case_insensitive
+# source_file
+b:|quartus|libraries|others|maxplus2|7474.bdf
+f0d781b738e7134a9d686c0ea27f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+7474:inst7
+7474:inst8
+7474:inst9
+}
+# macro_sequence
+
+# end
+# entity
+rom
+# storage
+db|zjw_kongzhiqi.(2).cnf
+db|zjw_kongzhiqi.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+rom.vhd
+ace4af1dcd47d2be4d4e59de8ce793
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# hierarchies {
+rom:inst
+}
+# lmf
+b:|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+74244
+# storage
+db|zjw_kongzhiqi.(3).cnf
+db|zjw_kongzhiqi.(3).cnf
+# case_insensitive
+# source_file
+b:|quartus|libraries|others|maxplus2|74244.bdf
+b991c4e54d71024b356407b6c66fc4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74244:inst10
+}
+# macro_sequence
+
+# end
+# entity
+74273
+# storage
+db|zjw_kongzhiqi.(4).cnf
+db|zjw_kongzhiqi.(4).cnf
+# case_insensitive
+# source_file
+b:|quartus|libraries|others|maxplus2|74273.bdf
+43247217913d17ab51bbea92feb3e38
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74273:inst12
+74273:inst6
+74273:inst11
+74273:inst14
+}
+# macro_sequence
+
+# end
+# complete
+

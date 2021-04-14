@@ -1,0 +1,86 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 7.418 ns
+From           : dp
+To             : jiepai:inst5|fstate.idle
+From Clock     : --
+To Clock       : clk1
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 32.420 ns
+From           : shutong:inst20|exp_r_ALU:inst|dr2[0]
+To             : qg
+From Clock     : clk1
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 23.504 ns
+From           : k[2]
+To             : qg
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : -0.914 ns
+From           : k[1]
+To             : shutong:inst20|exp_r_ALU:inst|dr2[1]
+From Clock     : --
+To Clock       : clk1
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk1'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 38.43 MHz ( period = 26.020 ns )
+From           : shutong:inst20|exp_r_ALU:inst|dr2[0]
+To             : shutong:inst20|exp_ram:inst2|sw_pc_ar:inst|ar[2]
+From Clock     : clk1
+To Clock       : clk1
+Failed Paths   : 0
+
+Type           : Clock Setup: 'clk2'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 340.02 MHz ( period = 2.941 ns )
+From           : xianshi:inst18|counter8:inst|iq[0]
+To             : xianshi:inst18|counter8:inst|iq[0]
+From Clock     : clk2
+To Clock       : clk2
+Failed Paths   : 0
+
+Type           : Clock Hold: 'clk1'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : kongzhi:inst|74273:inst12|14
+To             : kongzhi:inst|74273:inst6|13
+From Clock     : clk1
+To Clock       : clk1
+Failed Paths   : 15
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 15
+
+--------------------------------------------------------------------------------------
+

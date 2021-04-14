@@ -1,0 +1,981 @@
+Simulator report for zjw_yunsuanqi_vhdl
+Sun Mar 01 12:56:35 2020
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 547 nodes    ;
+; Simulation Coverage         ;      66.00 % ;
+; Total Number of Transitions ; 3730         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C5T144C8  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      66.00 % ;
+; Total nodes checked                                 ; 547          ;
+; Total output ports checked                          ; 700          ;
+; Total output ports with complete 1/0-value coverage ; 462          ;
+; Total output ports with no 1/0-value coverage       ; 120          ;
+; Total output ports with no 1-value coverage         ; 173          ;
+; Total output ports with no 0-value coverage         ; 185          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++-------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                               ;
++-----------------------------------+------------------------------------+------------------+
+; Node Name                         ; Output Port Name                   ; Output Port Type ;
++-----------------------------------+------------------------------------+------------------+
+; |zjw_yunsuanqi_vhdl|Add18~0       ; |zjw_yunsuanqi_vhdl|Add18~0        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add6~0        ; |zjw_yunsuanqi_vhdl|Add6~0         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add5~0        ; |zjw_yunsuanqi_vhdl|Add5~0         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add17~0       ; |zjw_yunsuanqi_vhdl|Add17~0        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add17~0       ; |zjw_yunsuanqi_vhdl|Add17~1        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add4~0        ; |zjw_yunsuanqi_vhdl|Add4~0         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add4~0        ; |zjw_yunsuanqi_vhdl|Add4~1         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add7~2        ; |zjw_yunsuanqi_vhdl|Add7~2         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add7~2        ; |zjw_yunsuanqi_vhdl|Add7~3         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add8~2        ; |zjw_yunsuanqi_vhdl|Add8~2         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add15~2       ; |zjw_yunsuanqi_vhdl|Add15~3        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add5~2        ; |zjw_yunsuanqi_vhdl|Add5~2         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add5~2        ; |zjw_yunsuanqi_vhdl|Add5~3         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add20~2       ; |zjw_yunsuanqi_vhdl|Add20~2        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add20~2       ; |zjw_yunsuanqi_vhdl|Add20~3        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add16~2       ; |zjw_yunsuanqi_vhdl|Add16~2        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add16~2       ; |zjw_yunsuanqi_vhdl|Add16~3        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add21~2       ; |zjw_yunsuanqi_vhdl|Add21~2        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add13~2       ; |zjw_yunsuanqi_vhdl|Add13~2        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add13~2       ; |zjw_yunsuanqi_vhdl|Add13~3        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add6~2        ; |zjw_yunsuanqi_vhdl|Add6~2         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add18~2       ; |zjw_yunsuanqi_vhdl|Add18~2        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add11~2       ; |zjw_yunsuanqi_vhdl|Add11~2        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add11~2       ; |zjw_yunsuanqi_vhdl|Add11~3        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add19~2       ; |zjw_yunsuanqi_vhdl|Add19~2        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add2~2        ; |zjw_yunsuanqi_vhdl|Add2~2         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add2~2        ; |zjw_yunsuanqi_vhdl|Add2~3         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add1~2        ; |zjw_yunsuanqi_vhdl|Add1~2         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add17~2       ; |zjw_yunsuanqi_vhdl|Add17~2        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add12~2       ; |zjw_yunsuanqi_vhdl|Add12~2        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add12~2       ; |zjw_yunsuanqi_vhdl|Add12~3        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add10~2       ; |zjw_yunsuanqi_vhdl|Add10~2        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add10~2       ; |zjw_yunsuanqi_vhdl|Add10~3        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add4~2        ; |zjw_yunsuanqi_vhdl|Add4~2         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add4~2        ; |zjw_yunsuanqi_vhdl|Add4~3         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add0~2        ; |zjw_yunsuanqi_vhdl|Add0~2         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add0~2        ; |zjw_yunsuanqi_vhdl|Add0~3         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add11~4       ; |zjw_yunsuanqi_vhdl|Add11~4        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add11~4       ; |zjw_yunsuanqi_vhdl|Add11~5        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add7~4        ; |zjw_yunsuanqi_vhdl|Add7~4         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add8~4        ; |zjw_yunsuanqi_vhdl|Add8~4         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add15~4       ; |zjw_yunsuanqi_vhdl|Add15~4        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add15~4       ; |zjw_yunsuanqi_vhdl|Add15~5        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add5~4        ; |zjw_yunsuanqi_vhdl|Add5~4         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add5~4        ; |zjw_yunsuanqi_vhdl|Add5~5         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add20~4       ; |zjw_yunsuanqi_vhdl|Add20~4        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add20~4       ; |zjw_yunsuanqi_vhdl|Add20~5        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add16~4       ; |zjw_yunsuanqi_vhdl|Add16~4        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add16~4       ; |zjw_yunsuanqi_vhdl|Add16~5        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add9~4        ; |zjw_yunsuanqi_vhdl|Add9~4         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add21~4       ; |zjw_yunsuanqi_vhdl|Add21~4        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add13~4       ; |zjw_yunsuanqi_vhdl|Add13~4        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add13~4       ; |zjw_yunsuanqi_vhdl|Add13~5        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add6~4        ; |zjw_yunsuanqi_vhdl|Add6~4         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add6~4        ; |zjw_yunsuanqi_vhdl|Add6~5         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add18~4       ; |zjw_yunsuanqi_vhdl|Add18~4        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add18~4       ; |zjw_yunsuanqi_vhdl|Add18~5        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add19~4       ; |zjw_yunsuanqi_vhdl|Add19~4        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add2~4        ; |zjw_yunsuanqi_vhdl|Add2~4         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add2~4        ; |zjw_yunsuanqi_vhdl|Add2~5         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add14~4       ; |zjw_yunsuanqi_vhdl|Add14~4        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add1~4        ; |zjw_yunsuanqi_vhdl|Add1~4         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add1~4        ; |zjw_yunsuanqi_vhdl|Add1~5         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add17~4       ; |zjw_yunsuanqi_vhdl|Add17~4        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add12~4       ; |zjw_yunsuanqi_vhdl|Add12~4        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add12~4       ; |zjw_yunsuanqi_vhdl|Add12~5        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add10~4       ; |zjw_yunsuanqi_vhdl|Add10~4        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add10~4       ; |zjw_yunsuanqi_vhdl|Add10~5        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add4~4        ; |zjw_yunsuanqi_vhdl|Add4~4         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add0~4        ; |zjw_yunsuanqi_vhdl|Add0~4         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add0~4        ; |zjw_yunsuanqi_vhdl|Add0~5         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add11~6       ; |zjw_yunsuanqi_vhdl|Add11~6        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add7~6        ; |zjw_yunsuanqi_vhdl|Add7~6         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add7~6        ; |zjw_yunsuanqi_vhdl|Add7~7         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add8~6        ; |zjw_yunsuanqi_vhdl|Add8~6         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add15~6       ; |zjw_yunsuanqi_vhdl|Add15~6        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add5~6        ; |zjw_yunsuanqi_vhdl|Add5~6         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add5~6        ; |zjw_yunsuanqi_vhdl|Add5~7         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add20~6       ; |zjw_yunsuanqi_vhdl|Add20~6        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add20~6       ; |zjw_yunsuanqi_vhdl|Add20~7        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add13~6       ; |zjw_yunsuanqi_vhdl|Add13~6        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add16~6       ; |zjw_yunsuanqi_vhdl|Add16~6        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add21~6       ; |zjw_yunsuanqi_vhdl|Add21~6        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add6~6        ; |zjw_yunsuanqi_vhdl|Add6~6         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add6~6        ; |zjw_yunsuanqi_vhdl|Add6~7         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add18~6       ; |zjw_yunsuanqi_vhdl|Add18~6        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add10~6       ; |zjw_yunsuanqi_vhdl|Add10~6        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add10~6       ; |zjw_yunsuanqi_vhdl|Add10~7        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add4~6        ; |zjw_yunsuanqi_vhdl|Add4~6         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add0~6        ; |zjw_yunsuanqi_vhdl|Add0~6         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add0~6        ; |zjw_yunsuanqi_vhdl|Add0~7         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add1~6        ; |zjw_yunsuanqi_vhdl|Add1~6         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add1~6        ; |zjw_yunsuanqi_vhdl|Add1~7         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add17~6       ; |zjw_yunsuanqi_vhdl|Add17~6        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add12~6       ; |zjw_yunsuanqi_vhdl|Add12~6        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add12~6       ; |zjw_yunsuanqi_vhdl|Add12~7        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add19~6       ; |zjw_yunsuanqi_vhdl|Add19~6        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add2~6        ; |zjw_yunsuanqi_vhdl|Add2~6         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add2~6        ; |zjw_yunsuanqi_vhdl|Add2~7         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add14~6       ; |zjw_yunsuanqi_vhdl|Add14~6        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add11~8       ; |zjw_yunsuanqi_vhdl|Add11~8        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add7~8        ; |zjw_yunsuanqi_vhdl|Add7~8         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add7~8        ; |zjw_yunsuanqi_vhdl|Add7~9         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add8~8        ; |zjw_yunsuanqi_vhdl|Add8~8         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add5~8        ; |zjw_yunsuanqi_vhdl|Add5~8         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add5~8        ; |zjw_yunsuanqi_vhdl|Add5~9         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add20~8       ; |zjw_yunsuanqi_vhdl|Add20~8        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add20~8       ; |zjw_yunsuanqi_vhdl|Add20~9        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add9~8        ; |zjw_yunsuanqi_vhdl|Add9~8         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add21~8       ; |zjw_yunsuanqi_vhdl|Add21~8        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add13~8       ; |zjw_yunsuanqi_vhdl|Add13~8        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add6~8        ; |zjw_yunsuanqi_vhdl|Add6~8         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add18~8       ; |zjw_yunsuanqi_vhdl|Add18~8        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add19~8       ; |zjw_yunsuanqi_vhdl|Add19~8        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add2~8        ; |zjw_yunsuanqi_vhdl|Add2~8         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add2~8        ; |zjw_yunsuanqi_vhdl|Add2~9         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add14~8       ; |zjw_yunsuanqi_vhdl|Add14~8        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add1~8        ; |zjw_yunsuanqi_vhdl|Add1~8         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add1~8        ; |zjw_yunsuanqi_vhdl|Add1~9         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add17~8       ; |zjw_yunsuanqi_vhdl|Add17~8        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add12~8       ; |zjw_yunsuanqi_vhdl|Add12~8        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add10~8       ; |zjw_yunsuanqi_vhdl|Add10~8        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add4~8        ; |zjw_yunsuanqi_vhdl|Add4~8         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add0~8        ; |zjw_yunsuanqi_vhdl|Add0~8         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add0~8        ; |zjw_yunsuanqi_vhdl|Add0~9         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add7~10       ; |zjw_yunsuanqi_vhdl|Add7~10        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add7~10       ; |zjw_yunsuanqi_vhdl|Add7~11        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add8~10       ; |zjw_yunsuanqi_vhdl|Add8~10        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add5~10       ; |zjw_yunsuanqi_vhdl|Add5~10        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add20~10      ; |zjw_yunsuanqi_vhdl|Add20~10       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add20~10      ; |zjw_yunsuanqi_vhdl|Add20~11       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add4~10       ; |zjw_yunsuanqi_vhdl|Add4~10        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add0~10       ; |zjw_yunsuanqi_vhdl|Add0~10        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add1~10       ; |zjw_yunsuanqi_vhdl|Add1~10        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add19~10      ; |zjw_yunsuanqi_vhdl|Add19~10       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add2~10       ; |zjw_yunsuanqi_vhdl|Add2~10        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add2~10       ; |zjw_yunsuanqi_vhdl|Add2~11        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add14~10      ; |zjw_yunsuanqi_vhdl|Add14~10       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add7~12       ; |zjw_yunsuanqi_vhdl|Add7~12        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add7~12       ; |zjw_yunsuanqi_vhdl|Add7~13        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add8~12       ; |zjw_yunsuanqi_vhdl|Add8~12        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add20~12      ; |zjw_yunsuanqi_vhdl|Add20~12       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add20~12      ; |zjw_yunsuanqi_vhdl|Add20~13       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add19~12      ; |zjw_yunsuanqi_vhdl|Add19~12       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add2~12       ; |zjw_yunsuanqi_vhdl|Add2~12        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add2~12       ; |zjw_yunsuanqi_vhdl|Add2~13        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add14~12      ; |zjw_yunsuanqi_vhdl|Add14~12       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add3~1        ; |zjw_yunsuanqi_vhdl|Add3~1         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add3~2        ; |zjw_yunsuanqi_vhdl|Add3~2         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add3~2        ; |zjw_yunsuanqi_vhdl|Add3~3         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add3~4        ; |zjw_yunsuanqi_vhdl|Add3~4         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add3~4        ; |zjw_yunsuanqi_vhdl|Add3~5         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add3~6        ; |zjw_yunsuanqi_vhdl|Add3~6         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add3~6        ; |zjw_yunsuanqi_vhdl|Add3~7         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add3~8        ; |zjw_yunsuanqi_vhdl|Add3~8         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add3~8        ; |zjw_yunsuanqi_vhdl|Add3~9         ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add3~10       ; |zjw_yunsuanqi_vhdl|Add3~10        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add3~10       ; |zjw_yunsuanqi_vhdl|Add3~11        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add3~12       ; |zjw_yunsuanqi_vhdl|Add3~12        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add3~12       ; |zjw_yunsuanqi_vhdl|Add3~13        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add7~14       ; |zjw_yunsuanqi_vhdl|Add7~14        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add8~14       ; |zjw_yunsuanqi_vhdl|Add8~14        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add20~14      ; |zjw_yunsuanqi_vhdl|Add20~14       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add3~14       ; |zjw_yunsuanqi_vhdl|Add3~14        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add19~14      ; |zjw_yunsuanqi_vhdl|Add19~14       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add2~14       ; |zjw_yunsuanqi_vhdl|Add2~14        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add14~14      ; |zjw_yunsuanqi_vhdl|Add14~14       ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg~34    ; |zjw_yunsuanqi_vhdl|bus_Reg~34     ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg~37    ; |zjw_yunsuanqi_vhdl|bus_Reg~37     ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[0]~38 ; |zjw_yunsuanqi_vhdl|bus_Reg[0]~38  ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg~39    ; |zjw_yunsuanqi_vhdl|bus_Reg~39     ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~9        ; |zjw_yunsuanqi_vhdl|Mux7~9         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~10       ; |zjw_yunsuanqi_vhdl|Mux7~10        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~12       ; |zjw_yunsuanqi_vhdl|Mux7~12        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~13       ; |zjw_yunsuanqi_vhdl|Mux7~13        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~14       ; |zjw_yunsuanqi_vhdl|Mux7~14        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~15       ; |zjw_yunsuanqi_vhdl|Mux7~15        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~16       ; |zjw_yunsuanqi_vhdl|Mux7~16        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~17       ; |zjw_yunsuanqi_vhdl|Mux7~17        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~18       ; |zjw_yunsuanqi_vhdl|Mux7~18        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~19       ; |zjw_yunsuanqi_vhdl|Mux7~19        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~20       ; |zjw_yunsuanqi_vhdl|Mux7~20        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~21       ; |zjw_yunsuanqi_vhdl|Mux7~21        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~22       ; |zjw_yunsuanqi_vhdl|Mux7~22        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~23       ; |zjw_yunsuanqi_vhdl|Mux7~23        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~24       ; |zjw_yunsuanqi_vhdl|Mux7~24        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~25       ; |zjw_yunsuanqi_vhdl|Mux7~25        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~26       ; |zjw_yunsuanqi_vhdl|Mux7~26        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~28       ; |zjw_yunsuanqi_vhdl|Mux7~28        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~29       ; |zjw_yunsuanqi_vhdl|Mux7~29        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~30       ; |zjw_yunsuanqi_vhdl|Mux7~30        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~31       ; |zjw_yunsuanqi_vhdl|Mux7~31        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~32       ; |zjw_yunsuanqi_vhdl|Mux7~32        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~33       ; |zjw_yunsuanqi_vhdl|Mux7~33        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~35       ; |zjw_yunsuanqi_vhdl|Mux7~35        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~36       ; |zjw_yunsuanqi_vhdl|Mux7~36        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~37       ; |zjw_yunsuanqi_vhdl|Mux7~37        ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[0]~40 ; |zjw_yunsuanqi_vhdl|bus_Reg[0]~40  ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg~41    ; |zjw_yunsuanqi_vhdl|bus_Reg~41     ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[0]~42 ; |zjw_yunsuanqi_vhdl|bus_Reg[0]~42  ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[0]~43 ; |zjw_yunsuanqi_vhdl|bus_Reg[0]~43  ; combout          ;
+; |zjw_yunsuanqi_vhdl|d~18          ; |zjw_yunsuanqi_vhdl|d~18           ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~2        ; |zjw_yunsuanqi_vhdl|Mux6~2         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~4        ; |zjw_yunsuanqi_vhdl|Mux6~4         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~5        ; |zjw_yunsuanqi_vhdl|Mux6~5         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~6        ; |zjw_yunsuanqi_vhdl|Mux6~6         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~7        ; |zjw_yunsuanqi_vhdl|Mux6~7         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~8        ; |zjw_yunsuanqi_vhdl|Mux6~8         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~9        ; |zjw_yunsuanqi_vhdl|Mux6~9         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~10       ; |zjw_yunsuanqi_vhdl|Mux6~10        ; combout          ;
+; |zjw_yunsuanqi_vhdl|dr1[1]        ; |zjw_yunsuanqi_vhdl|dr1[1]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|Mux6~11       ; |zjw_yunsuanqi_vhdl|Mux6~11        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~12       ; |zjw_yunsuanqi_vhdl|Mux6~12        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~13       ; |zjw_yunsuanqi_vhdl|Mux6~13        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~14       ; |zjw_yunsuanqi_vhdl|Mux6~14        ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~75     ; |zjw_yunsuanqi_vhdl|aluout~75      ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~76     ; |zjw_yunsuanqi_vhdl|aluout~76      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~16       ; |zjw_yunsuanqi_vhdl|Mux6~16        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~17       ; |zjw_yunsuanqi_vhdl|Mux6~17        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~18       ; |zjw_yunsuanqi_vhdl|Mux6~18        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~19       ; |zjw_yunsuanqi_vhdl|Mux6~19        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~20       ; |zjw_yunsuanqi_vhdl|Mux6~20        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~21       ; |zjw_yunsuanqi_vhdl|Mux6~21        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~22       ; |zjw_yunsuanqi_vhdl|Mux6~22        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~23       ; |zjw_yunsuanqi_vhdl|Mux6~23        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~24       ; |zjw_yunsuanqi_vhdl|Mux6~24        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~25       ; |zjw_yunsuanqi_vhdl|Mux6~25        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~26       ; |zjw_yunsuanqi_vhdl|Mux6~26        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~27       ; |zjw_yunsuanqi_vhdl|Mux6~27        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~28       ; |zjw_yunsuanqi_vhdl|Mux6~28        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~29       ; |zjw_yunsuanqi_vhdl|Mux6~29        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~30       ; |zjw_yunsuanqi_vhdl|Mux6~30        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~31       ; |zjw_yunsuanqi_vhdl|Mux6~31        ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~16     ; |zjw_yunsuanqi_vhdl|aluout~16      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~32       ; |zjw_yunsuanqi_vhdl|Mux6~32        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~33       ; |zjw_yunsuanqi_vhdl|Mux6~33        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~34       ; |zjw_yunsuanqi_vhdl|Mux6~34        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~35       ; |zjw_yunsuanqi_vhdl|Mux6~35        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~37       ; |zjw_yunsuanqi_vhdl|Mux6~37        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~38       ; |zjw_yunsuanqi_vhdl|Mux6~38        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~39       ; |zjw_yunsuanqi_vhdl|Mux6~39        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~40       ; |zjw_yunsuanqi_vhdl|Mux6~40        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~41       ; |zjw_yunsuanqi_vhdl|Mux6~41        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~42       ; |zjw_yunsuanqi_vhdl|Mux6~42        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~43       ; |zjw_yunsuanqi_vhdl|Mux6~43        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~44       ; |zjw_yunsuanqi_vhdl|Mux6~44        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~45       ; |zjw_yunsuanqi_vhdl|Mux6~45        ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[1]~44 ; |zjw_yunsuanqi_vhdl|bus_Reg[1]~44  ; combout          ;
+; |zjw_yunsuanqi_vhdl|r4[1]         ; |zjw_yunsuanqi_vhdl|r4[1]          ; regout           ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[1]~45 ; |zjw_yunsuanqi_vhdl|bus_Reg[1]~45  ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[1]~46 ; |zjw_yunsuanqi_vhdl|bus_Reg[1]~46  ; combout          ;
+; |zjw_yunsuanqi_vhdl|dr1[2]        ; |zjw_yunsuanqi_vhdl|dr1[2]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|aluout~81     ; |zjw_yunsuanqi_vhdl|aluout~81      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~1        ; |zjw_yunsuanqi_vhdl|Mux5~1         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~2        ; |zjw_yunsuanqi_vhdl|Mux5~2         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~3        ; |zjw_yunsuanqi_vhdl|Mux5~3         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~4        ; |zjw_yunsuanqi_vhdl|Mux5~4         ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~82     ; |zjw_yunsuanqi_vhdl|aluout~82      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~5        ; |zjw_yunsuanqi_vhdl|Mux5~5         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~6        ; |zjw_yunsuanqi_vhdl|Mux5~6         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~7        ; |zjw_yunsuanqi_vhdl|Mux5~7         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~8        ; |zjw_yunsuanqi_vhdl|Mux5~8         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~9        ; |zjw_yunsuanqi_vhdl|Mux5~9         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~10       ; |zjw_yunsuanqi_vhdl|Mux5~10        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~11       ; |zjw_yunsuanqi_vhdl|Mux5~11        ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~17     ; |zjw_yunsuanqi_vhdl|aluout~17      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~12       ; |zjw_yunsuanqi_vhdl|Mux5~12        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~13       ; |zjw_yunsuanqi_vhdl|Mux5~13        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~14       ; |zjw_yunsuanqi_vhdl|Mux5~14        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~15       ; |zjw_yunsuanqi_vhdl|Mux5~15        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~16       ; |zjw_yunsuanqi_vhdl|Mux5~16        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~17       ; |zjw_yunsuanqi_vhdl|Mux5~17        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~18       ; |zjw_yunsuanqi_vhdl|Mux5~18        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~19       ; |zjw_yunsuanqi_vhdl|Mux5~19        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~20       ; |zjw_yunsuanqi_vhdl|Mux5~20        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~21       ; |zjw_yunsuanqi_vhdl|Mux5~21        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~22       ; |zjw_yunsuanqi_vhdl|Mux5~22        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~23       ; |zjw_yunsuanqi_vhdl|Mux5~23        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux5~24       ; |zjw_yunsuanqi_vhdl|Mux5~24        ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[2]~47 ; |zjw_yunsuanqi_vhdl|bus_Reg[2]~47  ; combout          ;
+; |zjw_yunsuanqi_vhdl|r4[2]         ; |zjw_yunsuanqi_vhdl|r4[2]          ; regout           ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[2]~48 ; |zjw_yunsuanqi_vhdl|bus_Reg[2]~48  ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[2]~49 ; |zjw_yunsuanqi_vhdl|bus_Reg[2]~49  ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~84     ; |zjw_yunsuanqi_vhdl|aluout~84      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~3        ; |zjw_yunsuanqi_vhdl|Mux4~3         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~4        ; |zjw_yunsuanqi_vhdl|Mux4~4         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~5        ; |zjw_yunsuanqi_vhdl|Mux4~5         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~6        ; |zjw_yunsuanqi_vhdl|Mux4~6         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~7        ; |zjw_yunsuanqi_vhdl|Mux4~7         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~8        ; |zjw_yunsuanqi_vhdl|Mux4~8         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~9        ; |zjw_yunsuanqi_vhdl|Mux4~9         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~10       ; |zjw_yunsuanqi_vhdl|Mux4~10        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~11       ; |zjw_yunsuanqi_vhdl|Mux4~11        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~12       ; |zjw_yunsuanqi_vhdl|Mux4~12        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~13       ; |zjw_yunsuanqi_vhdl|Mux4~13        ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~18     ; |zjw_yunsuanqi_vhdl|aluout~18      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~14       ; |zjw_yunsuanqi_vhdl|Mux4~14        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~15       ; |zjw_yunsuanqi_vhdl|Mux4~15        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~16       ; |zjw_yunsuanqi_vhdl|Mux4~16        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~17       ; |zjw_yunsuanqi_vhdl|Mux4~17        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~18       ; |zjw_yunsuanqi_vhdl|Mux4~18        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~19       ; |zjw_yunsuanqi_vhdl|Mux4~19        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~20       ; |zjw_yunsuanqi_vhdl|Mux4~20        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~21       ; |zjw_yunsuanqi_vhdl|Mux4~21        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~22       ; |zjw_yunsuanqi_vhdl|Mux4~22        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~23       ; |zjw_yunsuanqi_vhdl|Mux4~23        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~24       ; |zjw_yunsuanqi_vhdl|Mux4~24        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~25       ; |zjw_yunsuanqi_vhdl|Mux4~25        ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[3]~50 ; |zjw_yunsuanqi_vhdl|bus_Reg[3]~50  ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[3]~51 ; |zjw_yunsuanqi_vhdl|bus_Reg[3]~51  ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[3]~52 ; |zjw_yunsuanqi_vhdl|bus_Reg[3]~52  ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~1        ; |zjw_yunsuanqi_vhdl|Mux3~1         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~2        ; |zjw_yunsuanqi_vhdl|Mux3~2         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~3        ; |zjw_yunsuanqi_vhdl|Mux3~3         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~4        ; |zjw_yunsuanqi_vhdl|Mux3~4         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~5        ; |zjw_yunsuanqi_vhdl|Mux3~5         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~6        ; |zjw_yunsuanqi_vhdl|Mux3~6         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~7        ; |zjw_yunsuanqi_vhdl|Mux3~7         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~8        ; |zjw_yunsuanqi_vhdl|Mux3~8         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~9        ; |zjw_yunsuanqi_vhdl|Mux3~9         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~10       ; |zjw_yunsuanqi_vhdl|Mux3~10        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~11       ; |zjw_yunsuanqi_vhdl|Mux3~11        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~12       ; |zjw_yunsuanqi_vhdl|Mux3~12        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~13       ; |zjw_yunsuanqi_vhdl|Mux3~13        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~14       ; |zjw_yunsuanqi_vhdl|Mux3~14        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~15       ; |zjw_yunsuanqi_vhdl|Mux3~15        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~16       ; |zjw_yunsuanqi_vhdl|Mux3~16        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~17       ; |zjw_yunsuanqi_vhdl|Mux3~17        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~18       ; |zjw_yunsuanqi_vhdl|Mux3~18        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~19       ; |zjw_yunsuanqi_vhdl|Mux3~19        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~20       ; |zjw_yunsuanqi_vhdl|Mux3~20        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~21       ; |zjw_yunsuanqi_vhdl|Mux3~21        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~22       ; |zjw_yunsuanqi_vhdl|Mux3~22        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~23       ; |zjw_yunsuanqi_vhdl|Mux3~23        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux3~24       ; |zjw_yunsuanqi_vhdl|Mux3~24        ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[4]~53 ; |zjw_yunsuanqi_vhdl|bus_Reg[4]~53  ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[4]~54 ; |zjw_yunsuanqi_vhdl|bus_Reg[4]~54  ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[4]~55 ; |zjw_yunsuanqi_vhdl|bus_Reg[4]~55  ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~3        ; |zjw_yunsuanqi_vhdl|Mux2~3         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~4        ; |zjw_yunsuanqi_vhdl|Mux2~4         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~5        ; |zjw_yunsuanqi_vhdl|Mux2~5         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~6        ; |zjw_yunsuanqi_vhdl|Mux2~6         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~7        ; |zjw_yunsuanqi_vhdl|Mux2~7         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~8        ; |zjw_yunsuanqi_vhdl|Mux2~8         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~9        ; |zjw_yunsuanqi_vhdl|Mux2~9         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~10       ; |zjw_yunsuanqi_vhdl|Mux2~10        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~11       ; |zjw_yunsuanqi_vhdl|Mux2~11        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~12       ; |zjw_yunsuanqi_vhdl|Mux2~12        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~13       ; |zjw_yunsuanqi_vhdl|Mux2~13        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~14       ; |zjw_yunsuanqi_vhdl|Mux2~14        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~15       ; |zjw_yunsuanqi_vhdl|Mux2~15        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~16       ; |zjw_yunsuanqi_vhdl|Mux2~16        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~17       ; |zjw_yunsuanqi_vhdl|Mux2~17        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~18       ; |zjw_yunsuanqi_vhdl|Mux2~18        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~19       ; |zjw_yunsuanqi_vhdl|Mux2~19        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~20       ; |zjw_yunsuanqi_vhdl|Mux2~20        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~21       ; |zjw_yunsuanqi_vhdl|Mux2~21        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~22       ; |zjw_yunsuanqi_vhdl|Mux2~22        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~23       ; |zjw_yunsuanqi_vhdl|Mux2~23        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~24       ; |zjw_yunsuanqi_vhdl|Mux2~24        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~25       ; |zjw_yunsuanqi_vhdl|Mux2~25        ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[5]~56 ; |zjw_yunsuanqi_vhdl|bus_Reg[5]~56  ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[5]~58 ; |zjw_yunsuanqi_vhdl|bus_Reg[5]~58  ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~1        ; |zjw_yunsuanqi_vhdl|Mux1~1         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~2        ; |zjw_yunsuanqi_vhdl|Mux1~2         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~3        ; |zjw_yunsuanqi_vhdl|Mux1~3         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~4        ; |zjw_yunsuanqi_vhdl|Mux1~4         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~5        ; |zjw_yunsuanqi_vhdl|Mux1~5         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~6        ; |zjw_yunsuanqi_vhdl|Mux1~6         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~7        ; |zjw_yunsuanqi_vhdl|Mux1~7         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~8        ; |zjw_yunsuanqi_vhdl|Mux1~8         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~9        ; |zjw_yunsuanqi_vhdl|Mux1~9         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~10       ; |zjw_yunsuanqi_vhdl|Mux1~10        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~11       ; |zjw_yunsuanqi_vhdl|Mux1~11        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~12       ; |zjw_yunsuanqi_vhdl|Mux1~12        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~13       ; |zjw_yunsuanqi_vhdl|Mux1~13        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~14       ; |zjw_yunsuanqi_vhdl|Mux1~14        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~16       ; |zjw_yunsuanqi_vhdl|Mux1~16        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~17       ; |zjw_yunsuanqi_vhdl|Mux1~17        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~18       ; |zjw_yunsuanqi_vhdl|Mux1~18        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~19       ; |zjw_yunsuanqi_vhdl|Mux1~19        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~20       ; |zjw_yunsuanqi_vhdl|Mux1~20        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~21       ; |zjw_yunsuanqi_vhdl|Mux1~21        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~22       ; |zjw_yunsuanqi_vhdl|Mux1~22        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~23       ; |zjw_yunsuanqi_vhdl|Mux1~23        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~24       ; |zjw_yunsuanqi_vhdl|Mux1~24        ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[6]~59 ; |zjw_yunsuanqi_vhdl|bus_Reg[6]~59  ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[6]~61 ; |zjw_yunsuanqi_vhdl|bus_Reg[6]~61  ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[7]~63 ; |zjw_yunsuanqi_vhdl|bus_Reg[7]~63  ; combout          ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[7]~64 ; |zjw_yunsuanqi_vhdl|bus_Reg[7]~64  ; combout          ;
+; |zjw_yunsuanqi_vhdl|r5[0]~24      ; |zjw_yunsuanqi_vhdl|r5[0]~24       ; combout          ;
+; |zjw_yunsuanqi_vhdl|dr2[0]~8      ; |zjw_yunsuanqi_vhdl|dr2[0]~8       ; combout          ;
+; |zjw_yunsuanqi_vhdl|r4[0]~16      ; |zjw_yunsuanqi_vhdl|r4[0]~16       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~1        ; |zjw_yunsuanqi_vhdl|Mux0~1         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~2        ; |zjw_yunsuanqi_vhdl|Mux0~2         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~3        ; |zjw_yunsuanqi_vhdl|Mux0~3         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~4        ; |zjw_yunsuanqi_vhdl|Mux0~4         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~5        ; |zjw_yunsuanqi_vhdl|Mux0~5         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~6        ; |zjw_yunsuanqi_vhdl|Mux0~6         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~7        ; |zjw_yunsuanqi_vhdl|Mux0~7         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~8        ; |zjw_yunsuanqi_vhdl|Mux0~8         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~9        ; |zjw_yunsuanqi_vhdl|Mux0~9         ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~10       ; |zjw_yunsuanqi_vhdl|Mux0~10        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~11       ; |zjw_yunsuanqi_vhdl|Mux0~11        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~12       ; |zjw_yunsuanqi_vhdl|Mux0~12        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~13       ; |zjw_yunsuanqi_vhdl|Mux0~13        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~15       ; |zjw_yunsuanqi_vhdl|Mux0~15        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~16       ; |zjw_yunsuanqi_vhdl|Mux0~16        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~17       ; |zjw_yunsuanqi_vhdl|Mux0~17        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~18       ; |zjw_yunsuanqi_vhdl|Mux0~18        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~19       ; |zjw_yunsuanqi_vhdl|Mux0~19        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~20       ; |zjw_yunsuanqi_vhdl|Mux0~20        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~21       ; |zjw_yunsuanqi_vhdl|Mux0~21        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~22       ; |zjw_yunsuanqi_vhdl|Mux0~22        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~23       ; |zjw_yunsuanqi_vhdl|Mux0~23        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~38       ; |zjw_yunsuanqi_vhdl|Mux7~38        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~39       ; |zjw_yunsuanqi_vhdl|Mux7~39        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~40       ; |zjw_yunsuanqi_vhdl|Mux7~40        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~41       ; |zjw_yunsuanqi_vhdl|Mux7~41        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux4~26       ; |zjw_yunsuanqi_vhdl|Mux4~26        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux2~26       ; |zjw_yunsuanqi_vhdl|Mux2~26        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~46       ; |zjw_yunsuanqi_vhdl|Mux6~46        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~47       ; |zjw_yunsuanqi_vhdl|Mux6~47        ; combout          ;
+; |zjw_yunsuanqi_vhdl|d[0]          ; |zjw_yunsuanqi_vhdl|d[0]~15        ; combout          ;
+; |zjw_yunsuanqi_vhdl|d[0]          ; |zjw_yunsuanqi_vhdl|d[0]~output    ; padio            ;
+; |zjw_yunsuanqi_vhdl|d[1]          ; |zjw_yunsuanqi_vhdl|d[1]~14        ; combout          ;
+; |zjw_yunsuanqi_vhdl|d[1]          ; |zjw_yunsuanqi_vhdl|d[1]~output    ; padio            ;
+; |zjw_yunsuanqi_vhdl|d[2]          ; |zjw_yunsuanqi_vhdl|d[2]~13        ; combout          ;
+; |zjw_yunsuanqi_vhdl|d[2]          ; |zjw_yunsuanqi_vhdl|d[2]~output    ; padio            ;
+; |zjw_yunsuanqi_vhdl|d[3]          ; |zjw_yunsuanqi_vhdl|d[3]~12        ; combout          ;
+; |zjw_yunsuanqi_vhdl|d[3]          ; |zjw_yunsuanqi_vhdl|d[3]~output    ; padio            ;
+; |zjw_yunsuanqi_vhdl|d[4]          ; |zjw_yunsuanqi_vhdl|d[4]~11        ; combout          ;
+; |zjw_yunsuanqi_vhdl|d[4]          ; |zjw_yunsuanqi_vhdl|d[4]~output    ; padio            ;
+; |zjw_yunsuanqi_vhdl|d[5]          ; |zjw_yunsuanqi_vhdl|d[5]~10        ; combout          ;
+; |zjw_yunsuanqi_vhdl|d[5]          ; |zjw_yunsuanqi_vhdl|d[5]~output    ; padio            ;
+; |zjw_yunsuanqi_vhdl|d[6]          ; |zjw_yunsuanqi_vhdl|d[6]~9         ; combout          ;
+; |zjw_yunsuanqi_vhdl|d[6]          ; |zjw_yunsuanqi_vhdl|d[6]~output    ; padio            ;
+; |zjw_yunsuanqi_vhdl|d[7]          ; |zjw_yunsuanqi_vhdl|d[7]~8         ; combout          ;
+; |zjw_yunsuanqi_vhdl|d[7]          ; |zjw_yunsuanqi_vhdl|d[7]~output    ; padio            ;
+; |zjw_yunsuanqi_vhdl|r5_bus        ; |zjw_yunsuanqi_vhdl|r5_bus~corein  ; combout          ;
+; |zjw_yunsuanqi_vhdl|ALU_bus       ; |zjw_yunsuanqi_vhdl|ALU_bus~corein ; combout          ;
+; |zjw_yunsuanqi_vhdl|r4_bus        ; |zjw_yunsuanqi_vhdl|r4_bus~corein  ; combout          ;
+; |zjw_yunsuanqi_vhdl|sw_bus        ; |zjw_yunsuanqi_vhdl|sw_bus~corein  ; combout          ;
+; |zjw_yunsuanqi_vhdl|k[0]          ; |zjw_yunsuanqi_vhdl|k[0]~corein    ; combout          ;
+; |zjw_yunsuanqi_vhdl|m             ; |zjw_yunsuanqi_vhdl|m~corein       ; combout          ;
+; |zjw_yunsuanqi_vhdl|s[2]          ; |zjw_yunsuanqi_vhdl|s[2]~corein    ; combout          ;
+; |zjw_yunsuanqi_vhdl|s[1]          ; |zjw_yunsuanqi_vhdl|s[1]~corein    ; combout          ;
+; |zjw_yunsuanqi_vhdl|s[0]          ; |zjw_yunsuanqi_vhdl|s[0]~corein    ; combout          ;
+; |zjw_yunsuanqi_vhdl|s[3]          ; |zjw_yunsuanqi_vhdl|s[3]~corein    ; combout          ;
+; |zjw_yunsuanqi_vhdl|cn            ; |zjw_yunsuanqi_vhdl|cn~corein      ; combout          ;
+; |zjw_yunsuanqi_vhdl|k[1]          ; |zjw_yunsuanqi_vhdl|k[1]~corein    ; combout          ;
+; |zjw_yunsuanqi_vhdl|k[2]          ; |zjw_yunsuanqi_vhdl|k[2]~corein    ; combout          ;
+; |zjw_yunsuanqi_vhdl|k[3]          ; |zjw_yunsuanqi_vhdl|k[3]~corein    ; combout          ;
+; |zjw_yunsuanqi_vhdl|clk           ; |zjw_yunsuanqi_vhdl|clk~corein     ; combout          ;
+; |zjw_yunsuanqi_vhdl|ldr5          ; |zjw_yunsuanqi_vhdl|ldr5~corein    ; combout          ;
+; |zjw_yunsuanqi_vhdl|lddr1         ; |zjw_yunsuanqi_vhdl|lddr1~corein   ; combout          ;
+; |zjw_yunsuanqi_vhdl|lddr2         ; |zjw_yunsuanqi_vhdl|lddr2~corein   ; combout          ;
+; |zjw_yunsuanqi_vhdl|ldr4          ; |zjw_yunsuanqi_vhdl|ldr4~corein    ; combout          ;
+; |zjw_yunsuanqi_vhdl|clk~clkctrl   ; |zjw_yunsuanqi_vhdl|clk~clkctrl    ; outclk           ;
+; |zjw_yunsuanqi_vhdl|r5[4]~feeder  ; |zjw_yunsuanqi_vhdl|r5[4]~feeder   ; combout          ;
+; |zjw_yunsuanqi_vhdl|dr2[5]~feeder ; |zjw_yunsuanqi_vhdl|dr2[5]~feeder  ; combout          ;
+; |zjw_yunsuanqi_vhdl|dr2[7]~feeder ; |zjw_yunsuanqi_vhdl|dr2[7]~feeder  ; combout          ;
++-----------------------------------+------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                 ;
++-----------------------------------+-----------------------------------+------------------+
+; Node Name                         ; Output Port Name                  ; Output Port Type ;
++-----------------------------------+-----------------------------------+------------------+
+; |zjw_yunsuanqi_vhdl|Add20~0       ; |zjw_yunsuanqi_vhdl|Add20~0       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add15~0       ; |zjw_yunsuanqi_vhdl|Add15~0       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add15~0       ; |zjw_yunsuanqi_vhdl|Add15~1       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add13~0       ; |zjw_yunsuanqi_vhdl|Add13~1       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add11~0       ; |zjw_yunsuanqi_vhdl|Add11~1       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add21~0       ; |zjw_yunsuanqi_vhdl|Add21~0       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add16~0       ; |zjw_yunsuanqi_vhdl|Add16~0       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add16~0       ; |zjw_yunsuanqi_vhdl|Add16~1       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add7~0        ; |zjw_yunsuanqi_vhdl|Add7~1        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add8~0        ; |zjw_yunsuanqi_vhdl|Add8~0        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add9~0        ; |zjw_yunsuanqi_vhdl|Add9~0        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add2~0        ; |zjw_yunsuanqi_vhdl|Add2~0        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add2~0        ; |zjw_yunsuanqi_vhdl|Add2~1        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add12~0       ; |zjw_yunsuanqi_vhdl|Add12~0       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add10~0       ; |zjw_yunsuanqi_vhdl|Add10~0       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add1~0        ; |zjw_yunsuanqi_vhdl|Add1~0        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add0~0        ; |zjw_yunsuanqi_vhdl|Add0~0        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add19~0       ; |zjw_yunsuanqi_vhdl|Add19~1       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add14~0       ; |zjw_yunsuanqi_vhdl|Add14~0       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add14~0       ; |zjw_yunsuanqi_vhdl|Add14~1       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add8~2        ; |zjw_yunsuanqi_vhdl|Add8~3        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add15~2       ; |zjw_yunsuanqi_vhdl|Add15~2       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add9~2        ; |zjw_yunsuanqi_vhdl|Add9~2        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add9~2        ; |zjw_yunsuanqi_vhdl|Add9~3        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add21~2       ; |zjw_yunsuanqi_vhdl|Add21~3       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add6~2        ; |zjw_yunsuanqi_vhdl|Add6~3        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add18~2       ; |zjw_yunsuanqi_vhdl|Add18~3       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add1~2        ; |zjw_yunsuanqi_vhdl|Add1~3        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add17~2       ; |zjw_yunsuanqi_vhdl|Add17~3       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add7~4        ; |zjw_yunsuanqi_vhdl|Add7~5        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add19~4       ; |zjw_yunsuanqi_vhdl|Add19~5       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add14~4       ; |zjw_yunsuanqi_vhdl|Add14~5       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add17~4       ; |zjw_yunsuanqi_vhdl|Add17~5       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add4~4        ; |zjw_yunsuanqi_vhdl|Add4~5        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add11~6       ; |zjw_yunsuanqi_vhdl|Add11~7       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add8~6        ; |zjw_yunsuanqi_vhdl|Add8~7        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add15~6       ; |zjw_yunsuanqi_vhdl|Add15~7       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add13~6       ; |zjw_yunsuanqi_vhdl|Add13~7       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add16~6       ; |zjw_yunsuanqi_vhdl|Add16~7       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add9~6        ; |zjw_yunsuanqi_vhdl|Add9~6        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add9~6        ; |zjw_yunsuanqi_vhdl|Add9~7        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add21~6       ; |zjw_yunsuanqi_vhdl|Add21~7       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add18~6       ; |zjw_yunsuanqi_vhdl|Add18~7       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add4~6        ; |zjw_yunsuanqi_vhdl|Add4~7        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add17~6       ; |zjw_yunsuanqi_vhdl|Add17~7       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add15~8       ; |zjw_yunsuanqi_vhdl|Add15~8       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add16~8       ; |zjw_yunsuanqi_vhdl|Add16~8       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add19~8       ; |zjw_yunsuanqi_vhdl|Add19~9       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add14~8       ; |zjw_yunsuanqi_vhdl|Add14~9       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add17~8       ; |zjw_yunsuanqi_vhdl|Add17~9       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add12~8       ; |zjw_yunsuanqi_vhdl|Add12~9       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add10~8       ; |zjw_yunsuanqi_vhdl|Add10~9       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add4~8        ; |zjw_yunsuanqi_vhdl|Add4~9        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add11~10      ; |zjw_yunsuanqi_vhdl|Add11~11      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add8~10       ; |zjw_yunsuanqi_vhdl|Add8~11       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add15~10      ; |zjw_yunsuanqi_vhdl|Add15~10      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add15~10      ; |zjw_yunsuanqi_vhdl|Add15~11      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add5~10       ; |zjw_yunsuanqi_vhdl|Add5~11       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add13~10      ; |zjw_yunsuanqi_vhdl|Add13~11      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add16~10      ; |zjw_yunsuanqi_vhdl|Add16~10      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add16~10      ; |zjw_yunsuanqi_vhdl|Add16~11      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add9~10       ; |zjw_yunsuanqi_vhdl|Add9~10       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add9~10       ; |zjw_yunsuanqi_vhdl|Add9~11       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add21~10      ; |zjw_yunsuanqi_vhdl|Add21~10      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add21~10      ; |zjw_yunsuanqi_vhdl|Add21~11      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add6~10       ; |zjw_yunsuanqi_vhdl|Add6~11       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add18~10      ; |zjw_yunsuanqi_vhdl|Add18~11      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add10~10      ; |zjw_yunsuanqi_vhdl|Add10~11      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add4~10       ; |zjw_yunsuanqi_vhdl|Add4~11       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add0~10       ; |zjw_yunsuanqi_vhdl|Add0~11       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add1~10       ; |zjw_yunsuanqi_vhdl|Add1~11       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add17~10      ; |zjw_yunsuanqi_vhdl|Add17~11      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add12~10      ; |zjw_yunsuanqi_vhdl|Add12~11      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add11~12      ; |zjw_yunsuanqi_vhdl|Add11~12      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add11~12      ; |zjw_yunsuanqi_vhdl|Add11~13      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add15~12      ; |zjw_yunsuanqi_vhdl|Add15~12      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add5~12       ; |zjw_yunsuanqi_vhdl|Add5~12       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add5~12       ; |zjw_yunsuanqi_vhdl|Add5~13       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add16~12      ; |zjw_yunsuanqi_vhdl|Add16~12      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add9~12       ; |zjw_yunsuanqi_vhdl|Add9~12       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add21~12      ; |zjw_yunsuanqi_vhdl|Add21~12      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add13~12      ; |zjw_yunsuanqi_vhdl|Add13~12      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add13~12      ; |zjw_yunsuanqi_vhdl|Add13~13      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add6~12       ; |zjw_yunsuanqi_vhdl|Add6~12       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add6~12       ; |zjw_yunsuanqi_vhdl|Add6~13       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add18~12      ; |zjw_yunsuanqi_vhdl|Add18~12      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add18~12      ; |zjw_yunsuanqi_vhdl|Add18~13      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add19~12      ; |zjw_yunsuanqi_vhdl|Add19~13      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add14~12      ; |zjw_yunsuanqi_vhdl|Add14~13      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add1~12       ; |zjw_yunsuanqi_vhdl|Add1~12       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add1~12       ; |zjw_yunsuanqi_vhdl|Add1~13       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add17~12      ; |zjw_yunsuanqi_vhdl|Add17~12      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add17~12      ; |zjw_yunsuanqi_vhdl|Add17~13      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add12~12      ; |zjw_yunsuanqi_vhdl|Add12~12      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add12~12      ; |zjw_yunsuanqi_vhdl|Add12~13      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add10~12      ; |zjw_yunsuanqi_vhdl|Add10~12      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add10~12      ; |zjw_yunsuanqi_vhdl|Add10~13      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add4~12       ; |zjw_yunsuanqi_vhdl|Add4~12       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add4~12       ; |zjw_yunsuanqi_vhdl|Add4~13       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add0~12       ; |zjw_yunsuanqi_vhdl|Add0~12       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add0~12       ; |zjw_yunsuanqi_vhdl|Add0~13       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add11~14      ; |zjw_yunsuanqi_vhdl|Add11~14      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add15~14      ; |zjw_yunsuanqi_vhdl|Add15~14      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add5~14       ; |zjw_yunsuanqi_vhdl|Add5~14       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add13~14      ; |zjw_yunsuanqi_vhdl|Add13~14      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add9~14       ; |zjw_yunsuanqi_vhdl|Add9~14       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add16~14      ; |zjw_yunsuanqi_vhdl|Add16~14      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add21~14      ; |zjw_yunsuanqi_vhdl|Add21~14      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add6~14       ; |zjw_yunsuanqi_vhdl|Add6~14       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add18~14      ; |zjw_yunsuanqi_vhdl|Add18~14      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add1~14       ; |zjw_yunsuanqi_vhdl|Add1~14       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add17~14      ; |zjw_yunsuanqi_vhdl|Add17~14      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add12~14      ; |zjw_yunsuanqi_vhdl|Add12~14      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add10~14      ; |zjw_yunsuanqi_vhdl|Add10~14      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add4~14       ; |zjw_yunsuanqi_vhdl|Add4~14       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add0~14       ; |zjw_yunsuanqi_vhdl|Add0~14       ; combout          ;
+; |zjw_yunsuanqi_vhdl|r5[0]         ; |zjw_yunsuanqi_vhdl|r5[0]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|dr2[0]        ; |zjw_yunsuanqi_vhdl|dr2[0]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|aluout~71     ; |zjw_yunsuanqi_vhdl|aluout~71     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~72     ; |zjw_yunsuanqi_vhdl|aluout~72     ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~27       ; |zjw_yunsuanqi_vhdl|Mux7~27       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~34       ; |zjw_yunsuanqi_vhdl|Mux7~34       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~1        ; |zjw_yunsuanqi_vhdl|Mux6~1        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~3        ; |zjw_yunsuanqi_vhdl|Mux6~3        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~15       ; |zjw_yunsuanqi_vhdl|Mux6~15       ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~77     ; |zjw_yunsuanqi_vhdl|aluout~77     ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~36       ; |zjw_yunsuanqi_vhdl|Mux6~36       ; combout          ;
+; |zjw_yunsuanqi_vhdl|dr2[2]        ; |zjw_yunsuanqi_vhdl|dr2[2]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|aluout~79     ; |zjw_yunsuanqi_vhdl|aluout~79     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~80     ; |zjw_yunsuanqi_vhdl|aluout~80     ; combout          ;
+; |zjw_yunsuanqi_vhdl|r5[2]         ; |zjw_yunsuanqi_vhdl|r5[2]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|aluout~85     ; |zjw_yunsuanqi_vhdl|aluout~85     ; combout          ;
+; |zjw_yunsuanqi_vhdl|dr2[4]        ; |zjw_yunsuanqi_vhdl|dr2[4]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|aluout~87     ; |zjw_yunsuanqi_vhdl|aluout~87     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~88     ; |zjw_yunsuanqi_vhdl|aluout~88     ; combout          ;
+; |zjw_yunsuanqi_vhdl|r5[4]         ; |zjw_yunsuanqi_vhdl|r5[4]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|dr2[5]        ; |zjw_yunsuanqi_vhdl|dr2[5]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|dr1[5]        ; |zjw_yunsuanqi_vhdl|dr1[5]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|aluout~91     ; |zjw_yunsuanqi_vhdl|aluout~91     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~92     ; |zjw_yunsuanqi_vhdl|aluout~92     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~93     ; |zjw_yunsuanqi_vhdl|aluout~93     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~94     ; |zjw_yunsuanqi_vhdl|aluout~94     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~20     ; |zjw_yunsuanqi_vhdl|aluout~20     ; combout          ;
+; |zjw_yunsuanqi_vhdl|r5[5]         ; |zjw_yunsuanqi_vhdl|r5[5]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|r4[5]         ; |zjw_yunsuanqi_vhdl|r4[5]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[5]~57 ; |zjw_yunsuanqi_vhdl|bus_Reg[5]~57 ; combout          ;
+; |zjw_yunsuanqi_vhdl|dr1[6]        ; |zjw_yunsuanqi_vhdl|dr1[6]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|dr2[6]        ; |zjw_yunsuanqi_vhdl|dr2[6]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|aluout~95     ; |zjw_yunsuanqi_vhdl|aluout~95     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~96     ; |zjw_yunsuanqi_vhdl|aluout~96     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~97     ; |zjw_yunsuanqi_vhdl|aluout~97     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~98     ; |zjw_yunsuanqi_vhdl|aluout~98     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~21     ; |zjw_yunsuanqi_vhdl|aluout~21     ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~15       ; |zjw_yunsuanqi_vhdl|Mux1~15       ; combout          ;
+; |zjw_yunsuanqi_vhdl|r5[6]         ; |zjw_yunsuanqi_vhdl|r5[6]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|r4[6]         ; |zjw_yunsuanqi_vhdl|r4[6]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[6]~60 ; |zjw_yunsuanqi_vhdl|bus_Reg[6]~60 ; combout          ;
+; |zjw_yunsuanqi_vhdl|r4[7]         ; |zjw_yunsuanqi_vhdl|r4[7]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[7]~62 ; |zjw_yunsuanqi_vhdl|bus_Reg[7]~62 ; combout          ;
+; |zjw_yunsuanqi_vhdl|r5[7]         ; |zjw_yunsuanqi_vhdl|r5[7]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|dr2[7]        ; |zjw_yunsuanqi_vhdl|dr2[7]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|dr1[7]        ; |zjw_yunsuanqi_vhdl|dr1[7]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|aluout~99     ; |zjw_yunsuanqi_vhdl|aluout~99     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~100    ; |zjw_yunsuanqi_vhdl|aluout~100    ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~101    ; |zjw_yunsuanqi_vhdl|aluout~101    ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~0        ; |zjw_yunsuanqi_vhdl|Mux0~0        ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~102    ; |zjw_yunsuanqi_vhdl|aluout~102    ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~22     ; |zjw_yunsuanqi_vhdl|aluout~22     ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~14       ; |zjw_yunsuanqi_vhdl|Mux0~14       ; combout          ;
+; |zjw_yunsuanqi_vhdl|k[4]          ; |zjw_yunsuanqi_vhdl|k[4]~corein   ; combout          ;
+; |zjw_yunsuanqi_vhdl|k[5]          ; |zjw_yunsuanqi_vhdl|k[5]~corein   ; combout          ;
+; |zjw_yunsuanqi_vhdl|k[6]          ; |zjw_yunsuanqi_vhdl|k[6]~corein   ; combout          ;
+; |zjw_yunsuanqi_vhdl|k[7]          ; |zjw_yunsuanqi_vhdl|k[7]~corein   ; combout          ;
++-----------------------------------+-----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                 ;
++-----------------------------------+-----------------------------------+------------------+
+; Node Name                         ; Output Port Name                  ; Output Port Type ;
++-----------------------------------+-----------------------------------+------------------+
+; |zjw_yunsuanqi_vhdl|Add20~0       ; |zjw_yunsuanqi_vhdl|Add20~1       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add15~0       ; |zjw_yunsuanqi_vhdl|Add15~0       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add15~0       ; |zjw_yunsuanqi_vhdl|Add15~1       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add18~0       ; |zjw_yunsuanqi_vhdl|Add18~1       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add13~0       ; |zjw_yunsuanqi_vhdl|Add13~0       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add13~0       ; |zjw_yunsuanqi_vhdl|Add13~1       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add11~0       ; |zjw_yunsuanqi_vhdl|Add11~0       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add11~0       ; |zjw_yunsuanqi_vhdl|Add11~1       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add21~0       ; |zjw_yunsuanqi_vhdl|Add21~1       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add16~0       ; |zjw_yunsuanqi_vhdl|Add16~0       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add16~0       ; |zjw_yunsuanqi_vhdl|Add16~1       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add7~0        ; |zjw_yunsuanqi_vhdl|Add7~0        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add7~0        ; |zjw_yunsuanqi_vhdl|Add7~1        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add8~0        ; |zjw_yunsuanqi_vhdl|Add8~1        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add6~0        ; |zjw_yunsuanqi_vhdl|Add6~1        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add5~0        ; |zjw_yunsuanqi_vhdl|Add5~1        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add9~0        ; |zjw_yunsuanqi_vhdl|Add9~1        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add2~0        ; |zjw_yunsuanqi_vhdl|Add2~0        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add2~0        ; |zjw_yunsuanqi_vhdl|Add2~1        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add12~0       ; |zjw_yunsuanqi_vhdl|Add12~1       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add10~0       ; |zjw_yunsuanqi_vhdl|Add10~1       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add1~0        ; |zjw_yunsuanqi_vhdl|Add1~1        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add0~0        ; |zjw_yunsuanqi_vhdl|Add0~1        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add19~0       ; |zjw_yunsuanqi_vhdl|Add19~0       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add14~0       ; |zjw_yunsuanqi_vhdl|Add14~0       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add14~0       ; |zjw_yunsuanqi_vhdl|Add14~1       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add19~2       ; |zjw_yunsuanqi_vhdl|Add19~3       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add14~2       ; |zjw_yunsuanqi_vhdl|Add14~2       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add14~2       ; |zjw_yunsuanqi_vhdl|Add14~3       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add17~2       ; |zjw_yunsuanqi_vhdl|Add17~3       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add8~4        ; |zjw_yunsuanqi_vhdl|Add8~5        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add9~4        ; |zjw_yunsuanqi_vhdl|Add9~5        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add21~4       ; |zjw_yunsuanqi_vhdl|Add21~5       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add17~4       ; |zjw_yunsuanqi_vhdl|Add17~5       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add4~4        ; |zjw_yunsuanqi_vhdl|Add4~5        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add4~6        ; |zjw_yunsuanqi_vhdl|Add4~7        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add17~6       ; |zjw_yunsuanqi_vhdl|Add17~7       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add19~6       ; |zjw_yunsuanqi_vhdl|Add19~7       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add14~6       ; |zjw_yunsuanqi_vhdl|Add14~7       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add11~8       ; |zjw_yunsuanqi_vhdl|Add11~9       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add15~8       ; |zjw_yunsuanqi_vhdl|Add15~9       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add8~8        ; |zjw_yunsuanqi_vhdl|Add8~9        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add16~8       ; |zjw_yunsuanqi_vhdl|Add16~9       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add9~8        ; |zjw_yunsuanqi_vhdl|Add9~9        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add21~8       ; |zjw_yunsuanqi_vhdl|Add21~9       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add13~8       ; |zjw_yunsuanqi_vhdl|Add13~9       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add6~8        ; |zjw_yunsuanqi_vhdl|Add6~9        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add18~8       ; |zjw_yunsuanqi_vhdl|Add18~9       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add17~8       ; |zjw_yunsuanqi_vhdl|Add17~9       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add12~8       ; |zjw_yunsuanqi_vhdl|Add12~9       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add10~8       ; |zjw_yunsuanqi_vhdl|Add10~9       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add4~8        ; |zjw_yunsuanqi_vhdl|Add4~9        ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add11~10      ; |zjw_yunsuanqi_vhdl|Add11~10      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add11~10      ; |zjw_yunsuanqi_vhdl|Add11~11      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add5~10       ; |zjw_yunsuanqi_vhdl|Add5~11       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add13~10      ; |zjw_yunsuanqi_vhdl|Add13~10      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add13~10      ; |zjw_yunsuanqi_vhdl|Add13~11      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add6~10       ; |zjw_yunsuanqi_vhdl|Add6~10       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add6~10       ; |zjw_yunsuanqi_vhdl|Add6~11       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add18~10      ; |zjw_yunsuanqi_vhdl|Add18~10      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add18~10      ; |zjw_yunsuanqi_vhdl|Add18~11      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add10~10      ; |zjw_yunsuanqi_vhdl|Add10~10      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add10~10      ; |zjw_yunsuanqi_vhdl|Add10~11      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add4~10       ; |zjw_yunsuanqi_vhdl|Add4~11       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add0~10       ; |zjw_yunsuanqi_vhdl|Add0~11       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add1~10       ; |zjw_yunsuanqi_vhdl|Add1~11       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add17~10      ; |zjw_yunsuanqi_vhdl|Add17~10      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add17~10      ; |zjw_yunsuanqi_vhdl|Add17~11      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add12~10      ; |zjw_yunsuanqi_vhdl|Add12~10      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add12~10      ; |zjw_yunsuanqi_vhdl|Add12~11      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add19~10      ; |zjw_yunsuanqi_vhdl|Add19~11      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add14~10      ; |zjw_yunsuanqi_vhdl|Add14~11      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add11~12      ; |zjw_yunsuanqi_vhdl|Add11~12      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add11~12      ; |zjw_yunsuanqi_vhdl|Add11~13      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add15~12      ; |zjw_yunsuanqi_vhdl|Add15~13      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add8~12       ; |zjw_yunsuanqi_vhdl|Add8~13       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add5~12       ; |zjw_yunsuanqi_vhdl|Add5~12       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add5~12       ; |zjw_yunsuanqi_vhdl|Add5~13       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add16~12      ; |zjw_yunsuanqi_vhdl|Add16~13      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add9~12       ; |zjw_yunsuanqi_vhdl|Add9~13       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add21~12      ; |zjw_yunsuanqi_vhdl|Add21~13      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add13~12      ; |zjw_yunsuanqi_vhdl|Add13~12      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add13~12      ; |zjw_yunsuanqi_vhdl|Add13~13      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add6~12       ; |zjw_yunsuanqi_vhdl|Add6~12       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add6~12       ; |zjw_yunsuanqi_vhdl|Add6~13       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add18~12      ; |zjw_yunsuanqi_vhdl|Add18~12      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add18~12      ; |zjw_yunsuanqi_vhdl|Add18~13      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add1~12       ; |zjw_yunsuanqi_vhdl|Add1~12       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add1~12       ; |zjw_yunsuanqi_vhdl|Add1~13       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add17~12      ; |zjw_yunsuanqi_vhdl|Add17~12      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add17~12      ; |zjw_yunsuanqi_vhdl|Add17~13      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add12~12      ; |zjw_yunsuanqi_vhdl|Add12~12      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add12~12      ; |zjw_yunsuanqi_vhdl|Add12~13      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add10~12      ; |zjw_yunsuanqi_vhdl|Add10~12      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add10~12      ; |zjw_yunsuanqi_vhdl|Add10~13      ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add4~12       ; |zjw_yunsuanqi_vhdl|Add4~12       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add4~12       ; |zjw_yunsuanqi_vhdl|Add4~13       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add0~12       ; |zjw_yunsuanqi_vhdl|Add0~12       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add0~12       ; |zjw_yunsuanqi_vhdl|Add0~13       ; cout             ;
+; |zjw_yunsuanqi_vhdl|Add11~14      ; |zjw_yunsuanqi_vhdl|Add11~14      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add5~14       ; |zjw_yunsuanqi_vhdl|Add5~14       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add13~14      ; |zjw_yunsuanqi_vhdl|Add13~14      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add6~14       ; |zjw_yunsuanqi_vhdl|Add6~14       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add18~14      ; |zjw_yunsuanqi_vhdl|Add18~14      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add1~14       ; |zjw_yunsuanqi_vhdl|Add1~14       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add17~14      ; |zjw_yunsuanqi_vhdl|Add17~14      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add12~14      ; |zjw_yunsuanqi_vhdl|Add12~14      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add10~14      ; |zjw_yunsuanqi_vhdl|Add10~14      ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add4~14       ; |zjw_yunsuanqi_vhdl|Add4~14       ; combout          ;
+; |zjw_yunsuanqi_vhdl|Add0~14       ; |zjw_yunsuanqi_vhdl|Add0~14       ; combout          ;
+; |zjw_yunsuanqi_vhdl|r5[0]         ; |zjw_yunsuanqi_vhdl|r5[0]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|dr2[0]        ; |zjw_yunsuanqi_vhdl|dr2[0]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|dr1[0]        ; |zjw_yunsuanqi_vhdl|dr1[0]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|aluout~71     ; |zjw_yunsuanqi_vhdl|aluout~71     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~72     ; |zjw_yunsuanqi_vhdl|aluout~72     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~73     ; |zjw_yunsuanqi_vhdl|aluout~73     ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~11       ; |zjw_yunsuanqi_vhdl|Mux7~11       ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~74     ; |zjw_yunsuanqi_vhdl|aluout~74     ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux7~34       ; |zjw_yunsuanqi_vhdl|Mux7~34       ; combout          ;
+; |zjw_yunsuanqi_vhdl|r4[0]         ; |zjw_yunsuanqi_vhdl|r4[0]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|Mux6~1        ; |zjw_yunsuanqi_vhdl|Mux6~1        ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~3        ; |zjw_yunsuanqi_vhdl|Mux6~3        ; combout          ;
+; |zjw_yunsuanqi_vhdl|dr2[1]        ; |zjw_yunsuanqi_vhdl|dr2[1]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|Mux6~15       ; |zjw_yunsuanqi_vhdl|Mux6~15       ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~77     ; |zjw_yunsuanqi_vhdl|aluout~77     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~78     ; |zjw_yunsuanqi_vhdl|aluout~78     ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux6~36       ; |zjw_yunsuanqi_vhdl|Mux6~36       ; combout          ;
+; |zjw_yunsuanqi_vhdl|r5[1]         ; |zjw_yunsuanqi_vhdl|r5[1]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|dr2[2]        ; |zjw_yunsuanqi_vhdl|dr2[2]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|aluout~79     ; |zjw_yunsuanqi_vhdl|aluout~79     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~80     ; |zjw_yunsuanqi_vhdl|aluout~80     ; combout          ;
+; |zjw_yunsuanqi_vhdl|r5[2]         ; |zjw_yunsuanqi_vhdl|r5[2]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|dr2[3]        ; |zjw_yunsuanqi_vhdl|dr2[3]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|dr1[3]        ; |zjw_yunsuanqi_vhdl|dr1[3]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|aluout~83     ; |zjw_yunsuanqi_vhdl|aluout~83     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~85     ; |zjw_yunsuanqi_vhdl|aluout~85     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~86     ; |zjw_yunsuanqi_vhdl|aluout~86     ; combout          ;
+; |zjw_yunsuanqi_vhdl|r5[3]         ; |zjw_yunsuanqi_vhdl|r5[3]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|r4[3]         ; |zjw_yunsuanqi_vhdl|r4[3]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|dr1[4]        ; |zjw_yunsuanqi_vhdl|dr1[4]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|dr2[4]        ; |zjw_yunsuanqi_vhdl|dr2[4]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|aluout~87     ; |zjw_yunsuanqi_vhdl|aluout~87     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~88     ; |zjw_yunsuanqi_vhdl|aluout~88     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~89     ; |zjw_yunsuanqi_vhdl|aluout~89     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~90     ; |zjw_yunsuanqi_vhdl|aluout~90     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~19     ; |zjw_yunsuanqi_vhdl|aluout~19     ; combout          ;
+; |zjw_yunsuanqi_vhdl|r5[4]         ; |zjw_yunsuanqi_vhdl|r5[4]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|r4[4]         ; |zjw_yunsuanqi_vhdl|r4[4]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|dr2[5]        ; |zjw_yunsuanqi_vhdl|dr2[5]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|dr1[5]        ; |zjw_yunsuanqi_vhdl|dr1[5]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|aluout~91     ; |zjw_yunsuanqi_vhdl|aluout~91     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~92     ; |zjw_yunsuanqi_vhdl|aluout~92     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~93     ; |zjw_yunsuanqi_vhdl|aluout~93     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~94     ; |zjw_yunsuanqi_vhdl|aluout~94     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~20     ; |zjw_yunsuanqi_vhdl|aluout~20     ; combout          ;
+; |zjw_yunsuanqi_vhdl|r5[5]         ; |zjw_yunsuanqi_vhdl|r5[5]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|r4[5]         ; |zjw_yunsuanqi_vhdl|r4[5]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[5]~57 ; |zjw_yunsuanqi_vhdl|bus_Reg[5]~57 ; combout          ;
+; |zjw_yunsuanqi_vhdl|dr1[6]        ; |zjw_yunsuanqi_vhdl|dr1[6]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|dr2[6]        ; |zjw_yunsuanqi_vhdl|dr2[6]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|aluout~95     ; |zjw_yunsuanqi_vhdl|aluout~95     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~96     ; |zjw_yunsuanqi_vhdl|aluout~96     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~97     ; |zjw_yunsuanqi_vhdl|aluout~97     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~98     ; |zjw_yunsuanqi_vhdl|aluout~98     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~21     ; |zjw_yunsuanqi_vhdl|aluout~21     ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux1~15       ; |zjw_yunsuanqi_vhdl|Mux1~15       ; combout          ;
+; |zjw_yunsuanqi_vhdl|r5[6]         ; |zjw_yunsuanqi_vhdl|r5[6]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|r4[6]         ; |zjw_yunsuanqi_vhdl|r4[6]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[6]~60 ; |zjw_yunsuanqi_vhdl|bus_Reg[6]~60 ; combout          ;
+; |zjw_yunsuanqi_vhdl|r4[7]         ; |zjw_yunsuanqi_vhdl|r4[7]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|bus_Reg[7]~62 ; |zjw_yunsuanqi_vhdl|bus_Reg[7]~62 ; combout          ;
+; |zjw_yunsuanqi_vhdl|r5[7]         ; |zjw_yunsuanqi_vhdl|r5[7]         ; regout           ;
+; |zjw_yunsuanqi_vhdl|dr2[7]        ; |zjw_yunsuanqi_vhdl|dr2[7]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|dr1[7]        ; |zjw_yunsuanqi_vhdl|dr1[7]        ; regout           ;
+; |zjw_yunsuanqi_vhdl|aluout~99     ; |zjw_yunsuanqi_vhdl|aluout~99     ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~100    ; |zjw_yunsuanqi_vhdl|aluout~100    ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~101    ; |zjw_yunsuanqi_vhdl|aluout~101    ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~0        ; |zjw_yunsuanqi_vhdl|Mux0~0        ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~102    ; |zjw_yunsuanqi_vhdl|aluout~102    ; combout          ;
+; |zjw_yunsuanqi_vhdl|aluout~22     ; |zjw_yunsuanqi_vhdl|aluout~22     ; combout          ;
+; |zjw_yunsuanqi_vhdl|Mux0~14       ; |zjw_yunsuanqi_vhdl|Mux0~14       ; combout          ;
+; |zjw_yunsuanqi_vhdl|k[4]          ; |zjw_yunsuanqi_vhdl|k[4]~corein   ; combout          ;
+; |zjw_yunsuanqi_vhdl|k[5]          ; |zjw_yunsuanqi_vhdl|k[5]~corein   ; combout          ;
+; |zjw_yunsuanqi_vhdl|k[6]          ; |zjw_yunsuanqi_vhdl|k[6]~corein   ; combout          ;
+; |zjw_yunsuanqi_vhdl|k[7]          ; |zjw_yunsuanqi_vhdl|k[7]~corein   ; combout          ;
++-----------------------------------+-----------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Mar 01 12:56:33 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off zjw_yunsuanqi_vhdl -c zjw_yunsuanqi_vhdl
+Info: Using vector source file "C:/Users/apple/Desktop/‘ÀÀ„∆˜/zjw_yunsuanqi_vhdl/zjw_yunsuanqi_vhdl.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      66.00 %
+Info: Number of transitions in simulation is 3730
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 170 megabytes
+    Info: Processing ended: Sun Mar 01 12:56:35 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

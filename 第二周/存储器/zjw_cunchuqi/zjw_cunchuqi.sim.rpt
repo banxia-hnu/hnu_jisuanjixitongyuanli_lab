@@ -1,0 +1,301 @@
+Simulator report for zjw_cunchuqi
+Wed Mar 04 14:47:46 2020
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |zjw_cunchuqi|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_dea1:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 83 nodes     ;
+; Simulation Coverage         ;      57.73 % ;
+; Total Number of Transitions ; 328          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C5T144C8  ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++----------------------------------------------------------------------------------------------------------+
+; |zjw_cunchuqi|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_dea1:auto_generated|ALTSYNCRAM ;
++----------------------------------------------------------------------------------------------------------+
+Memory report data cannot be output to ASCII.
+Please use Quartus II to view the memory report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      57.73 % ;
+; Total nodes checked                                 ; 83           ;
+; Total output ports checked                          ; 97           ;
+; Total output ports with complete 1/0-value coverage ; 56           ;
+; Total output ports with no 1/0-value coverage       ; 35           ;
+; Total output ports with no 1-value coverage         ; 38           ;
+; Total output ports with no 0-value coverage         ; 38           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                          ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                  ; Output Port Name                                                                                     ; Output Port Type ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+------------------+
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[1]                                                                    ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[1]                                                              ; regout           ;
+; |zjw_cunchuqi|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_dea1:auto_generated|ram_block1a0 ; |zjw_cunchuqi|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_dea1:auto_generated|q_a[0] ; portadataout0    ;
+; |zjw_cunchuqi|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_dea1:auto_generated|ram_block1a0 ; |zjw_cunchuqi|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_dea1:auto_generated|q_a[1] ; portadataout1    ;
+; |zjw_cunchuqi|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_dea1:auto_generated|ram_block1a0 ; |zjw_cunchuqi|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_dea1:auto_generated|q_a[2] ; portadataout2    ;
+; |zjw_cunchuqi|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_dea1:auto_generated|ram_block1a0 ; |zjw_cunchuqi|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_dea1:auto_generated|q_a[4] ; portadataout4    ;
+; |zjw_cunchuqi|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_dea1:auto_generated|ram_block1a0 ; |zjw_cunchuqi|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_dea1:auto_generated|q_a[6] ; portadataout6    ;
+; |zjw_cunchuqi|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_dea1:auto_generated|ram_block1a0 ; |zjw_cunchuqi|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_dea1:auto_generated|q_a[7] ; portadataout7    ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[0]                                                                    ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[0]                                                              ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[0]~24                                                                 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[0]~24                                                           ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[0]~24                                                                 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[0]~25                                                           ; cout             ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[1]~26                                                                 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[1]~26                                                           ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[1]~26                                                                 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[1]~27                                                           ; cout             ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[2]~28                                                                 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[2]~28                                                           ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[7]~11                                                            ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[7]~11                                                      ; combout          ;
+; |zjw_cunchuqi|lpm_ram_io:inst|datatri[7]~0                                                                 ; |zjw_cunchuqi|lpm_ram_io:inst|datatri[7]~0                                                           ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|d~16                                                                     ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|d~16                                                               ; combout          ;
+; |zjw_cunchuqi|lpm_ram_io:inst|datatri[7]~17                                                                ; |zjw_cunchuqi|lpm_ram_io:inst|datatri[7]~17                                                          ; combout          ;
+; |zjw_cunchuqi|lpm_ram_io:inst|datatri[7]~18                                                                ; |zjw_cunchuqi|lpm_ram_io:inst|datatri[7]~18                                                          ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[6]~13                                                            ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[6]~13                                                      ; combout          ;
+; |zjw_cunchuqi|lpm_ram_io:inst|datatri[6]~19                                                                ; |zjw_cunchuqi|lpm_ram_io:inst|datatri[6]~19                                                          ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[5]~15                                                            ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[5]~15                                                      ; combout          ;
+; |zjw_cunchuqi|lpm_ram_io:inst|datatri[5]~20                                                                ; |zjw_cunchuqi|lpm_ram_io:inst|datatri[5]~20                                                          ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[4]~17                                                            ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[4]~17                                                      ; combout          ;
+; |zjw_cunchuqi|lpm_ram_io:inst|datatri[4]~21                                                                ; |zjw_cunchuqi|lpm_ram_io:inst|datatri[4]~21                                                          ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[3]~19                                                            ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[3]~19                                                      ; combout          ;
+; |zjw_cunchuqi|lpm_ram_io:inst|datatri[3]~22                                                                ; |zjw_cunchuqi|lpm_ram_io:inst|datatri[3]~22                                                          ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[2]~21                                                            ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[2]~21                                                      ; combout          ;
+; |zjw_cunchuqi|lpm_ram_io:inst|datatri[2]~23                                                                ; |zjw_cunchuqi|lpm_ram_io:inst|datatri[2]~23                                                          ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[1]~22                                                            ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[1]~22                                                      ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[1]~23                                                            ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[1]~23                                                      ; combout          ;
+; |zjw_cunchuqi|lpm_ram_io:inst|datatri[1]~24                                                                ; |zjw_cunchuqi|lpm_ram_io:inst|datatri[1]~24                                                          ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[0]~24                                                            ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[0]~24                                                      ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[0]~25                                                            ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[0]~25                                                      ; combout          ;
+; |zjw_cunchuqi|lpm_ram_io:inst|datatri[0]~25                                                                ; |zjw_cunchuqi|lpm_ram_io:inst|datatri[0]~25                                                          ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|seq2~1                                                                   ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|seq2~1                                                             ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|seq2~0                                                                   ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|seq2~0                                                             ; combout          ;
+; |zjw_cunchuqi|lpm_ram_io:inst|_~3                                                                          ; |zjw_cunchuqi|lpm_ram_io:inst|_~3                                                                    ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[0]                                                                    ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[0]                                                              ; regout           ;
+; |zjw_cunchuqi|d[7]                                                                                         ; |zjw_cunchuqi|d[7]                                                                                   ; padio            ;
+; |zjw_cunchuqi|d[6]                                                                                         ; |zjw_cunchuqi|d[6]                                                                                   ; padio            ;
+; |zjw_cunchuqi|d[5]                                                                                         ; |zjw_cunchuqi|d[5]                                                                                   ; padio            ;
+; |zjw_cunchuqi|d[4]                                                                                         ; |zjw_cunchuqi|d[4]                                                                                   ; padio            ;
+; |zjw_cunchuqi|d[3]                                                                                         ; |zjw_cunchuqi|d[3]                                                                                   ; padio            ;
+; |zjw_cunchuqi|d[2]                                                                                         ; |zjw_cunchuqi|d[2]                                                                                   ; padio            ;
+; |zjw_cunchuqi|d[1]                                                                                         ; |zjw_cunchuqi|d[1]                                                                                   ; padio            ;
+; |zjw_cunchuqi|d[0]                                                                                         ; |zjw_cunchuqi|d[0]                                                                                   ; padio            ;
+; |zjw_cunchuqi|pc_bus                                                                                       ; |zjw_cunchuqi|pc_bus~corein                                                                          ; combout          ;
+; |zjw_cunchuqi|sw_bus                                                                                       ; |zjw_cunchuqi|sw_bus~corein                                                                          ; combout          ;
+; |zjw_cunchuqi|rd                                                                                           ; |zjw_cunchuqi|rd~corein                                                                              ; combout          ;
+; |zjw_cunchuqi|inputd[0]                                                                                    ; |zjw_cunchuqi|inputd[0]~corein                                                                       ; combout          ;
+; |zjw_cunchuqi|clk_cdu                                                                                      ; |zjw_cunchuqi|clk_cdu~corein                                                                         ; combout          ;
+; |zjw_cunchuqi|pcld                                                                                         ; |zjw_cunchuqi|pcld~corein                                                                            ; combout          ;
+; |zjw_cunchuqi|pcen                                                                                         ; |zjw_cunchuqi|pcen~corein                                                                            ; combout          ;
+; |zjw_cunchuqi|we                                                                                           ; |zjw_cunchuqi|we~corein                                                                              ; combout          ;
+; |zjw_cunchuqi|ldar                                                                                         ; |zjw_cunchuqi|ldar~corein                                                                            ; combout          ;
+; |zjw_cunchuqi|clk_cdu~clkctrl                                                                              ; |zjw_cunchuqi|clk_cdu~clkctrl                                                                        ; outclk           ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                             ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+; Node Name                                       ; Output Port Name                                ; Output Port Type ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[7]         ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[7]         ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[6]         ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[6]         ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[5]         ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[5]         ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[4]         ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[4]         ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[3]         ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[3]         ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[2]         ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[2]         ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[2]~28      ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[2]~29      ; cout             ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[3]~30      ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[3]~30      ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[3]~30      ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[3]~31      ; cout             ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[4]~32      ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[4]~32      ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[4]~32      ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[4]~33      ; cout             ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[5]~34      ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[5]~34      ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[5]~34      ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[5]~35      ; cout             ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[6]~36      ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[6]~36      ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[6]~36      ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[6]~37      ; cout             ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[7]~38      ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[7]~38      ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[7]~10 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[7]~10 ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[6]~12 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[6]~12 ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[5]~14 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[5]~14 ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[4]~16 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[4]~16 ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[3]~18 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[3]~18 ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[2]~20 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[2]~20 ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[2]         ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[2]         ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[3]         ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[3]         ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[4]         ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[4]         ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[5]         ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[5]         ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[6]         ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[6]         ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[7]         ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[7]         ; regout           ;
+; |zjw_cunchuqi|inputd[7]                         ; |zjw_cunchuqi|inputd[7]~corein                  ; combout          ;
+; |zjw_cunchuqi|memenab                           ; |zjw_cunchuqi|memenab~corein                    ; combout          ;
+; |zjw_cunchuqi|inputd[6]                         ; |zjw_cunchuqi|inputd[6]~corein                  ; combout          ;
+; |zjw_cunchuqi|inputd[5]                         ; |zjw_cunchuqi|inputd[5]~corein                  ; combout          ;
+; |zjw_cunchuqi|inputd[4]                         ; |zjw_cunchuqi|inputd[4]~corein                  ; combout          ;
+; |zjw_cunchuqi|inputd[3]                         ; |zjw_cunchuqi|inputd[3]~corein                  ; combout          ;
+; |zjw_cunchuqi|inputd[2]                         ; |zjw_cunchuqi|inputd[2]~corein                  ; combout          ;
+; |zjw_cunchuqi|inputd[1]                         ; |zjw_cunchuqi|inputd[1]~corein                  ; combout          ;
+; |zjw_cunchuqi|pcclr                             ; |zjw_cunchuqi|pcclr~corein                      ; combout          ;
+; |zjw_cunchuqi|pcclr~clkctrl                     ; |zjw_cunchuqi|pcclr~clkctrl                     ; outclk           ;
++-------------------------------------------------+-------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                                             ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                  ; Output Port Name                                                                                     ; Output Port Type ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+------------------+
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[7]                                                                    ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[7]                                                              ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[6]                                                                    ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[6]                                                              ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[5]                                                                    ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[5]                                                              ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[4]                                                                    ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[4]                                                              ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[3]                                                                    ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[3]                                                              ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[2]                                                                    ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[2]                                                              ; regout           ;
+; |zjw_cunchuqi|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_dea1:auto_generated|ram_block1a0 ; |zjw_cunchuqi|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_dea1:auto_generated|q_a[3] ; portadataout3    ;
+; |zjw_cunchuqi|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_dea1:auto_generated|ram_block1a0 ; |zjw_cunchuqi|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_dea1:auto_generated|q_a[5] ; portadataout5    ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[2]~28                                                                 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[2]~29                                                           ; cout             ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[3]~30                                                                 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[3]~30                                                           ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[3]~30                                                                 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[3]~31                                                           ; cout             ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[4]~32                                                                 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[4]~32                                                           ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[4]~32                                                                 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[4]~33                                                           ; cout             ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[5]~34                                                                 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[5]~34                                                           ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[5]~34                                                                 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[5]~35                                                           ; cout             ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[6]~36                                                                 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[6]~36                                                           ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[6]~36                                                                 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[6]~37                                                           ; cout             ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[7]~38                                                                 ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|pc[7]~38                                                           ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[7]~10                                                            ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[7]~10                                                      ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[6]~12                                                            ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[6]~12                                                      ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[5]~14                                                            ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[5]~14                                                      ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[4]~16                                                            ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[4]~16                                                      ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[3]~18                                                            ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[3]~18                                                      ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[2]~20                                                            ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|bus_Reg[2]~20                                                      ; combout          ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[1]                                                                    ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[1]                                                              ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[2]                                                                    ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[2]                                                              ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[3]                                                                    ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[3]                                                              ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[4]                                                                    ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[4]                                                              ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[5]                                                                    ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[5]                                                              ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[6]                                                                    ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[6]                                                              ; regout           ;
+; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[7]                                                                    ; |zjw_cunchuqi|zjw_cunchuqi1:inst1|ar[7]                                                              ; regout           ;
+; |zjw_cunchuqi|inputd[7]                                                                                    ; |zjw_cunchuqi|inputd[7]~corein                                                                       ; combout          ;
+; |zjw_cunchuqi|inputd[6]                                                                                    ; |zjw_cunchuqi|inputd[6]~corein                                                                       ; combout          ;
+; |zjw_cunchuqi|inputd[5]                                                                                    ; |zjw_cunchuqi|inputd[5]~corein                                                                       ; combout          ;
+; |zjw_cunchuqi|inputd[4]                                                                                    ; |zjw_cunchuqi|inputd[4]~corein                                                                       ; combout          ;
+; |zjw_cunchuqi|inputd[3]                                                                                    ; |zjw_cunchuqi|inputd[3]~corein                                                                       ; combout          ;
+; |zjw_cunchuqi|inputd[2]                                                                                    ; |zjw_cunchuqi|inputd[2]~corein                                                                       ; combout          ;
+; |zjw_cunchuqi|inputd[1]                                                                                    ; |zjw_cunchuqi|inputd[1]~corein                                                                       ; combout          ;
++------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Wed Mar 04 14:47:45 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off zjw_cunchuqi -c zjw_cunchuqi
+Info: Using vector source file "C:/Users/apple/Desktop/´æ´¢Æ÷/zjw_cunchuqi/zjw_cunchuqi.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      57.73 %
+Info: Number of transitions in simulation is 328
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 168 megabytes
+    Info: Processing ended: Wed Mar 04 14:47:46 2020
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

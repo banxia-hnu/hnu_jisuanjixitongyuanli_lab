@@ -1,0 +1,84 @@
+Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+41
+2959
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+74244
+# storage
+db|zjw_zongxian.(1).cnf
+db|zjw_zongxian.(1).cnf
+# case_insensitive
+# source_file
+b:|quartus|libraries|others|maxplus2|74244.bdf
+b991c4e54d71024b356407b6c66fc4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74244:inst
+}
+# macro_sequence
+
+# end
+# entity
+74374
+# storage
+db|zjw_zongxian.(2).cnf
+db|zjw_zongxian.(2).cnf
+# case_insensitive
+# source_file
+b:|quartus|libraries|others|maxplus2|74374.bdf
+a56b17bdd2cc8a58faa0ca93b8a3a3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74374:inst1
+74374:inst2
+74374:inst3
+}
+# macro_sequence
+
+# end
+# entity
+zjw_zongxian
+# storage
+db|zjw_zongxian.(0).cnf
+db|zjw_zongxian.(0).cnf
+# case_insensitive
+# source_file
+zjw_zongxian.bdf
+f1c2a97ca501f9688d478dcb9cf5a9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

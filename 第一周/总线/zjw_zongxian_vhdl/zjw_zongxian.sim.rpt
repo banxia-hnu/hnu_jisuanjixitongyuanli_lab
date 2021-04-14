@@ -1,0 +1,393 @@
+Simulator report for zjw_zongxian
+Sun Mar 01 13:02:32 2020
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 4.0 us       ;
+; Simulation Netlist Size     ; 134 nodes    ;
+; Simulation Coverage         ;      24.65 % ;
+; Total Number of Transitions ; 197          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone      ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      24.65 % ;
+; Total nodes checked                                 ; 134          ;
+; Total output ports checked                          ; 142          ;
+; Total output ports with complete 1/0-value coverage ; 35           ;
+; Total output ports with no 1/0-value coverage       ; 91           ;
+; Total output ports with no 1-value coverage         ; 91           ;
+; Total output ports with no 0-value coverage         ; 107          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                            ;
++--------------------------+--------------------------+------------------+
+; Node Name                ; Output Port Name         ; Output Port Type ;
++--------------------------+--------------------------+------------------+
+; |zjw_zongxian|bus_Reg~0  ; |zjw_zongxian|bus_Reg~0  ; out0             ;
+; |zjw_zongxian|bus_Reg~1  ; |zjw_zongxian|bus_Reg~1  ; out0             ;
+; |zjw_zongxian|bus_Reg~2  ; |zjw_zongxian|bus_Reg~2  ; out0             ;
+; |zjw_zongxian|bus_Reg~3  ; |zjw_zongxian|bus_Reg~3  ; out              ;
+; |zjw_zongxian|bus_Reg~4  ; |zjw_zongxian|bus_Reg~4  ; out              ;
+; |zjw_zongxian|bus_Reg~5  ; |zjw_zongxian|bus_Reg~5  ; out              ;
+; |zjw_zongxian|bus_Reg~10 ; |zjw_zongxian|bus_Reg~10 ; out              ;
+; |zjw_zongxian|bus_Reg~13 ; |zjw_zongxian|bus_Reg~13 ; out              ;
+; |zjw_zongxian|bus_Reg~14 ; |zjw_zongxian|bus_Reg~14 ; out              ;
+; |zjw_zongxian|bus_Reg~15 ; |zjw_zongxian|bus_Reg~15 ; out              ;
+; |zjw_zongxian|bus_Reg~20 ; |zjw_zongxian|bus_Reg~20 ; out              ;
+; |zjw_zongxian|bus_Reg~21 ; |zjw_zongxian|bus_Reg~21 ; out0             ;
+; |zjw_zongxian|bus_Reg~22 ; |zjw_zongxian|bus_Reg~22 ; out0             ;
+; |zjw_zongxian|bus_Reg~23 ; |zjw_zongxian|bus_Reg~23 ; out0             ;
+; |zjw_zongxian|bus_Reg~24 ; |zjw_zongxian|bus_Reg~24 ; out              ;
+; |zjw_zongxian|bus_Reg~25 ; |zjw_zongxian|bus_Reg~25 ; out              ;
+; |zjw_zongxian|bus_Reg~26 ; |zjw_zongxian|bus_Reg~26 ; out              ;
+; |zjw_zongxian|bus_Reg~31 ; |zjw_zongxian|bus_Reg~31 ; out              ;
+; |zjw_zongxian|bus_Reg~32 ; |zjw_zongxian|bus_Reg~32 ; out0             ;
+; |zjw_zongxian|bus_Reg~33 ; |zjw_zongxian|bus_Reg~33 ; out0             ;
+; |zjw_zongxian|bus_Reg~34 ; |zjw_zongxian|bus_Reg~34 ; out0             ;
+; |zjw_zongxian|bus_Reg[7] ; |zjw_zongxian|bus_Reg[7] ; out              ;
+; |zjw_zongxian|bus_Reg[6] ; |zjw_zongxian|bus_Reg[6] ; out              ;
+; |zjw_zongxian|bus_Reg[5] ; |zjw_zongxian|bus_Reg[5] ; out              ;
+; |zjw_zongxian|bus_Reg[0] ; |zjw_zongxian|bus_Reg[0] ; out              ;
+; |zjw_zongxian|CLK        ; |zjw_zongxian|CLK        ; out              ;
+; |zjw_zongxian|sw_bus     ; |zjw_zongxian|sw_bus     ; out              ;
+; |zjw_zongxian|r1_bus     ; |zjw_zongxian|r1_bus     ; out              ;
+; |zjw_zongxian|r3_bus     ; |zjw_zongxian|r3_bus     ; out              ;
+; |zjw_zongxian|k[0]       ; |zjw_zongxian|k[0]       ; out              ;
+; |zjw_zongxian|k[5]       ; |zjw_zongxian|k[5]       ; out              ;
+; |zjw_zongxian|k[6]       ; |zjw_zongxian|k[6]       ; out              ;
+; |zjw_zongxian|k[7]       ; |zjw_zongxian|k[7]       ; out              ;
+; |zjw_zongxian|lddr[0]    ; |zjw_zongxian|lddr[0]    ; out              ;
+; |zjw_zongxian|lddr[2]    ; |zjw_zongxian|lddr[2]    ; out              ;
++--------------------------+--------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                ;
++--------------------------+---------------------------+------------------+
+; Node Name                ; Output Port Name          ; Output Port Type ;
++--------------------------+---------------------------+------------------+
+; |zjw_zongxian|r2~0       ; |zjw_zongxian|r2~0        ; out              ;
+; |zjw_zongxian|r2~1       ; |zjw_zongxian|r2~1        ; out              ;
+; |zjw_zongxian|r2~2       ; |zjw_zongxian|r2~2        ; out              ;
+; |zjw_zongxian|r2~3       ; |zjw_zongxian|r2~3        ; out              ;
+; |zjw_zongxian|r2~4       ; |zjw_zongxian|r2~4        ; out              ;
+; |zjw_zongxian|r2~5       ; |zjw_zongxian|r2~5        ; out              ;
+; |zjw_zongxian|r2~6       ; |zjw_zongxian|r2~6        ; out              ;
+; |zjw_zongxian|r2~7       ; |zjw_zongxian|r2~7        ; out              ;
+; |zjw_zongxian|r3~3       ; |zjw_zongxian|r3~3        ; out              ;
+; |zjw_zongxian|r3~4       ; |zjw_zongxian|r3~4        ; out              ;
+; |zjw_zongxian|r3~5       ; |zjw_zongxian|r3~5        ; out              ;
+; |zjw_zongxian|r3~6       ; |zjw_zongxian|r3~6        ; out              ;
+; |zjw_zongxian|r3~11      ; |zjw_zongxian|r3~11       ; out              ;
+; |zjw_zongxian|r3~12      ; |zjw_zongxian|r3~12       ; out              ;
+; |zjw_zongxian|r3~13      ; |zjw_zongxian|r3~13       ; out              ;
+; |zjw_zongxian|r3~14      ; |zjw_zongxian|r3~14       ; out              ;
+; |zjw_zongxian|bus_Reg~6  ; |zjw_zongxian|bus_Reg~6   ; out              ;
+; |zjw_zongxian|bus_Reg~7  ; |zjw_zongxian|bus_Reg~7   ; out              ;
+; |zjw_zongxian|bus_Reg~8  ; |zjw_zongxian|bus_Reg~8   ; out              ;
+; |zjw_zongxian|bus_Reg~9  ; |zjw_zongxian|bus_Reg~9   ; out              ;
+; |zjw_zongxian|bus_Reg~11 ; |zjw_zongxian|bus_Reg~11  ; out0             ;
+; |zjw_zongxian|bus_Reg~12 ; |zjw_zongxian|bus_Reg~12  ; out0             ;
+; |zjw_zongxian|bus_Reg~16 ; |zjw_zongxian|bus_Reg~16  ; out              ;
+; |zjw_zongxian|bus_Reg~17 ; |zjw_zongxian|bus_Reg~17  ; out              ;
+; |zjw_zongxian|bus_Reg~18 ; |zjw_zongxian|bus_Reg~18  ; out              ;
+; |zjw_zongxian|bus_Reg~19 ; |zjw_zongxian|bus_Reg~19  ; out              ;
+; |zjw_zongxian|bus_Reg~27 ; |zjw_zongxian|bus_Reg~27  ; out              ;
+; |zjw_zongxian|bus_Reg~28 ; |zjw_zongxian|bus_Reg~28  ; out              ;
+; |zjw_zongxian|bus_Reg~29 ; |zjw_zongxian|bus_Reg~29  ; out              ;
+; |zjw_zongxian|bus_Reg~30 ; |zjw_zongxian|bus_Reg~30  ; out              ;
+; |zjw_zongxian|bus_Reg[4] ; |zjw_zongxian|bus_Reg[4]  ; out              ;
+; |zjw_zongxian|bus_Reg[3] ; |zjw_zongxian|bus_Reg[3]  ; out              ;
+; |zjw_zongxian|bus_Reg[2] ; |zjw_zongxian|bus_Reg[2]  ; out              ;
+; |zjw_zongxian|bus_Reg[1] ; |zjw_zongxian|bus_Reg[1]  ; out              ;
+; |zjw_zongxian|l~16       ; |zjw_zongxian|l~16        ; out0             ;
+; |zjw_zongxian|l~17       ; |zjw_zongxian|l~17        ; out0             ;
+; |zjw_zongxian|l~18       ; |zjw_zongxian|l~18        ; out0             ;
+; |zjw_zongxian|l[0]~0     ; |zjw_zongxian|l[0]~0      ; out              ;
+; |zjw_zongxian|l[1]~1     ; |zjw_zongxian|l[1]~1      ; out              ;
+; |zjw_zongxian|l[2]~2     ; |zjw_zongxian|l[2]~2      ; out              ;
+; |zjw_zongxian|l[3]~3     ; |zjw_zongxian|l[3]~3      ; out              ;
+; |zjw_zongxian|l[4]~4     ; |zjw_zongxian|l[4]~4      ; out              ;
+; |zjw_zongxian|l[5]~5     ; |zjw_zongxian|l[5]~5      ; out              ;
+; |zjw_zongxian|l[6]~6     ; |zjw_zongxian|l[6]~6      ; out              ;
+; |zjw_zongxian|l[7]~7     ; |zjw_zongxian|l[7]~7      ; out              ;
+; |zjw_zongxian|r3[1]      ; |zjw_zongxian|r3[1]       ; regout           ;
+; |zjw_zongxian|r3[2]      ; |zjw_zongxian|r3[2]       ; regout           ;
+; |zjw_zongxian|r3[3]      ; |zjw_zongxian|r3[3]       ; regout           ;
+; |zjw_zongxian|r3[4]      ; |zjw_zongxian|r3[4]       ; regout           ;
+; |zjw_zongxian|r2[0]      ; |zjw_zongxian|r2[0]       ; regout           ;
+; |zjw_zongxian|r2[1]      ; |zjw_zongxian|r2[1]       ; regout           ;
+; |zjw_zongxian|r2[2]      ; |zjw_zongxian|r2[2]       ; regout           ;
+; |zjw_zongxian|r2[3]      ; |zjw_zongxian|r2[3]       ; regout           ;
+; |zjw_zongxian|r2[4]      ; |zjw_zongxian|r2[4]       ; regout           ;
+; |zjw_zongxian|r2[5]      ; |zjw_zongxian|r2[5]       ; regout           ;
+; |zjw_zongxian|r2[6]      ; |zjw_zongxian|r2[6]       ; regout           ;
+; |zjw_zongxian|r2[7]      ; |zjw_zongxian|r2[7]       ; regout           ;
+; |zjw_zongxian|r1[1]      ; |zjw_zongxian|r1[1]       ; regout           ;
+; |zjw_zongxian|r1[2]      ; |zjw_zongxian|r1[2]       ; regout           ;
+; |zjw_zongxian|r1[3]      ; |zjw_zongxian|r1[3]       ; regout           ;
+; |zjw_zongxian|r1[4]      ; |zjw_zongxian|r1[4]       ; regout           ;
+; |zjw_zongxian|r2_bus     ; |zjw_zongxian|r2_bus      ; out              ;
+; |zjw_zongxian|k[1]       ; |zjw_zongxian|k[1]        ; out              ;
+; |zjw_zongxian|k[2]       ; |zjw_zongxian|k[2]        ; out              ;
+; |zjw_zongxian|k[3]       ; |zjw_zongxian|k[3]        ; out              ;
+; |zjw_zongxian|k[4]       ; |zjw_zongxian|k[4]        ; out              ;
+; |zjw_zongxian|lddr[1]    ; |zjw_zongxian|lddr[1]     ; out              ;
+; |zjw_zongxian|l[0]       ; |zjw_zongxian|l[0]        ; out              ;
+; |zjw_zongxian|l[0]       ; |zjw_zongxian|l[0]~result ; pin_out          ;
+; |zjw_zongxian|l[1]       ; |zjw_zongxian|l[1]        ; out              ;
+; |zjw_zongxian|l[1]       ; |zjw_zongxian|l[1]~result ; pin_out          ;
+; |zjw_zongxian|l[2]       ; |zjw_zongxian|l[2]        ; out              ;
+; |zjw_zongxian|l[2]       ; |zjw_zongxian|l[2]~result ; pin_out          ;
+; |zjw_zongxian|l[3]       ; |zjw_zongxian|l[3]        ; out              ;
+; |zjw_zongxian|l[3]       ; |zjw_zongxian|l[3]~result ; pin_out          ;
+; |zjw_zongxian|l[4]       ; |zjw_zongxian|l[4]        ; out              ;
+; |zjw_zongxian|l[4]       ; |zjw_zongxian|l[4]~result ; pin_out          ;
+; |zjw_zongxian|l[5]       ; |zjw_zongxian|l[5]        ; out              ;
+; |zjw_zongxian|l[5]       ; |zjw_zongxian|l[5]~result ; pin_out          ;
+; |zjw_zongxian|l[6]       ; |zjw_zongxian|l[6]        ; out              ;
+; |zjw_zongxian|l[6]       ; |zjw_zongxian|l[6]~result ; pin_out          ;
+; |zjw_zongxian|l[7]       ; |zjw_zongxian|l[7]        ; out              ;
+; |zjw_zongxian|l[7]       ; |zjw_zongxian|l[7]~result ; pin_out          ;
+; |zjw_zongxian|l[7]~8     ; |zjw_zongxian|l[7]~8      ; out0             ;
+; |zjw_zongxian|l[6]~9     ; |zjw_zongxian|l[6]~9      ; out0             ;
+; |zjw_zongxian|l[5]~10    ; |zjw_zongxian|l[5]~10     ; out0             ;
+; |zjw_zongxian|l[4]~11    ; |zjw_zongxian|l[4]~11     ; out0             ;
+; |zjw_zongxian|l[3]~12    ; |zjw_zongxian|l[3]~12     ; out0             ;
+; |zjw_zongxian|l[2]~13    ; |zjw_zongxian|l[2]~13     ; out0             ;
+; |zjw_zongxian|l[1]~14    ; |zjw_zongxian|l[1]~14     ; out0             ;
+; |zjw_zongxian|l[0]~15    ; |zjw_zongxian|l[0]~15     ; out0             ;
++--------------------------+---------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                ;
++--------------------------+---------------------------+------------------+
+; Node Name                ; Output Port Name          ; Output Port Type ;
++--------------------------+---------------------------+------------------+
+; |zjw_zongxian|r2~0       ; |zjw_zongxian|r2~0        ; out              ;
+; |zjw_zongxian|r2~1       ; |zjw_zongxian|r2~1        ; out              ;
+; |zjw_zongxian|r2~2       ; |zjw_zongxian|r2~2        ; out              ;
+; |zjw_zongxian|r2~3       ; |zjw_zongxian|r2~3        ; out              ;
+; |zjw_zongxian|r2~4       ; |zjw_zongxian|r2~4        ; out              ;
+; |zjw_zongxian|r2~5       ; |zjw_zongxian|r2~5        ; out              ;
+; |zjw_zongxian|r2~6       ; |zjw_zongxian|r2~6        ; out              ;
+; |zjw_zongxian|r2~7       ; |zjw_zongxian|r2~7        ; out              ;
+; |zjw_zongxian|r3~0       ; |zjw_zongxian|r3~0        ; out              ;
+; |zjw_zongxian|r3~1       ; |zjw_zongxian|r3~1        ; out              ;
+; |zjw_zongxian|r3~2       ; |zjw_zongxian|r3~2        ; out              ;
+; |zjw_zongxian|r3~3       ; |zjw_zongxian|r3~3        ; out              ;
+; |zjw_zongxian|r3~4       ; |zjw_zongxian|r3~4        ; out              ;
+; |zjw_zongxian|r3~5       ; |zjw_zongxian|r3~5        ; out              ;
+; |zjw_zongxian|r3~6       ; |zjw_zongxian|r3~6        ; out              ;
+; |zjw_zongxian|r3~7       ; |zjw_zongxian|r3~7        ; out              ;
+; |zjw_zongxian|r3~8       ; |zjw_zongxian|r3~8        ; out              ;
+; |zjw_zongxian|r3~9       ; |zjw_zongxian|r3~9        ; out              ;
+; |zjw_zongxian|r3~10      ; |zjw_zongxian|r3~10       ; out              ;
+; |zjw_zongxian|r3~11      ; |zjw_zongxian|r3~11       ; out              ;
+; |zjw_zongxian|r3~12      ; |zjw_zongxian|r3~12       ; out              ;
+; |zjw_zongxian|r3~13      ; |zjw_zongxian|r3~13       ; out              ;
+; |zjw_zongxian|r3~14      ; |zjw_zongxian|r3~14       ; out              ;
+; |zjw_zongxian|r3~15      ; |zjw_zongxian|r3~15       ; out              ;
+; |zjw_zongxian|bus_Reg~6  ; |zjw_zongxian|bus_Reg~6   ; out              ;
+; |zjw_zongxian|bus_Reg~7  ; |zjw_zongxian|bus_Reg~7   ; out              ;
+; |zjw_zongxian|bus_Reg~8  ; |zjw_zongxian|bus_Reg~8   ; out              ;
+; |zjw_zongxian|bus_Reg~9  ; |zjw_zongxian|bus_Reg~9   ; out              ;
+; |zjw_zongxian|bus_Reg~11 ; |zjw_zongxian|bus_Reg~11  ; out0             ;
+; |zjw_zongxian|bus_Reg~12 ; |zjw_zongxian|bus_Reg~12  ; out0             ;
+; |zjw_zongxian|bus_Reg~16 ; |zjw_zongxian|bus_Reg~16  ; out              ;
+; |zjw_zongxian|bus_Reg~17 ; |zjw_zongxian|bus_Reg~17  ; out              ;
+; |zjw_zongxian|bus_Reg~18 ; |zjw_zongxian|bus_Reg~18  ; out              ;
+; |zjw_zongxian|bus_Reg~19 ; |zjw_zongxian|bus_Reg~19  ; out              ;
+; |zjw_zongxian|bus_Reg~27 ; |zjw_zongxian|bus_Reg~27  ; out              ;
+; |zjw_zongxian|bus_Reg~28 ; |zjw_zongxian|bus_Reg~28  ; out              ;
+; |zjw_zongxian|bus_Reg~29 ; |zjw_zongxian|bus_Reg~29  ; out              ;
+; |zjw_zongxian|bus_Reg~30 ; |zjw_zongxian|bus_Reg~30  ; out              ;
+; |zjw_zongxian|bus_Reg[4] ; |zjw_zongxian|bus_Reg[4]  ; out              ;
+; |zjw_zongxian|bus_Reg[3] ; |zjw_zongxian|bus_Reg[3]  ; out              ;
+; |zjw_zongxian|bus_Reg[2] ; |zjw_zongxian|bus_Reg[2]  ; out              ;
+; |zjw_zongxian|bus_Reg[1] ; |zjw_zongxian|bus_Reg[1]  ; out              ;
+; |zjw_zongxian|l~16       ; |zjw_zongxian|l~16        ; out0             ;
+; |zjw_zongxian|l~17       ; |zjw_zongxian|l~17        ; out0             ;
+; |zjw_zongxian|l~18       ; |zjw_zongxian|l~18        ; out0             ;
+; |zjw_zongxian|r3[0]      ; |zjw_zongxian|r3[0]       ; regout           ;
+; |zjw_zongxian|l[0]~0     ; |zjw_zongxian|l[0]~0      ; out              ;
+; |zjw_zongxian|l[1]~1     ; |zjw_zongxian|l[1]~1      ; out              ;
+; |zjw_zongxian|l[2]~2     ; |zjw_zongxian|l[2]~2      ; out              ;
+; |zjw_zongxian|l[3]~3     ; |zjw_zongxian|l[3]~3      ; out              ;
+; |zjw_zongxian|l[4]~4     ; |zjw_zongxian|l[4]~4      ; out              ;
+; |zjw_zongxian|l[5]~5     ; |zjw_zongxian|l[5]~5      ; out              ;
+; |zjw_zongxian|l[6]~6     ; |zjw_zongxian|l[6]~6      ; out              ;
+; |zjw_zongxian|l[7]~7     ; |zjw_zongxian|l[7]~7      ; out              ;
+; |zjw_zongxian|r3[1]      ; |zjw_zongxian|r3[1]       ; regout           ;
+; |zjw_zongxian|r3[2]      ; |zjw_zongxian|r3[2]       ; regout           ;
+; |zjw_zongxian|r3[3]      ; |zjw_zongxian|r3[3]       ; regout           ;
+; |zjw_zongxian|r3[4]      ; |zjw_zongxian|r3[4]       ; regout           ;
+; |zjw_zongxian|r3[5]      ; |zjw_zongxian|r3[5]       ; regout           ;
+; |zjw_zongxian|r3[6]      ; |zjw_zongxian|r3[6]       ; regout           ;
+; |zjw_zongxian|r3[7]      ; |zjw_zongxian|r3[7]       ; regout           ;
+; |zjw_zongxian|r2[0]      ; |zjw_zongxian|r2[0]       ; regout           ;
+; |zjw_zongxian|r2[1]      ; |zjw_zongxian|r2[1]       ; regout           ;
+; |zjw_zongxian|r2[2]      ; |zjw_zongxian|r2[2]       ; regout           ;
+; |zjw_zongxian|r2[3]      ; |zjw_zongxian|r2[3]       ; regout           ;
+; |zjw_zongxian|r2[4]      ; |zjw_zongxian|r2[4]       ; regout           ;
+; |zjw_zongxian|r2[5]      ; |zjw_zongxian|r2[5]       ; regout           ;
+; |zjw_zongxian|r2[6]      ; |zjw_zongxian|r2[6]       ; regout           ;
+; |zjw_zongxian|r2[7]      ; |zjw_zongxian|r2[7]       ; regout           ;
+; |zjw_zongxian|r1[0]      ; |zjw_zongxian|r1[0]       ; regout           ;
+; |zjw_zongxian|r1[1]      ; |zjw_zongxian|r1[1]       ; regout           ;
+; |zjw_zongxian|r1[2]      ; |zjw_zongxian|r1[2]       ; regout           ;
+; |zjw_zongxian|r1[3]      ; |zjw_zongxian|r1[3]       ; regout           ;
+; |zjw_zongxian|r1[4]      ; |zjw_zongxian|r1[4]       ; regout           ;
+; |zjw_zongxian|r1[5]      ; |zjw_zongxian|r1[5]       ; regout           ;
+; |zjw_zongxian|r1[6]      ; |zjw_zongxian|r1[6]       ; regout           ;
+; |zjw_zongxian|r1[7]      ; |zjw_zongxian|r1[7]       ; regout           ;
+; |zjw_zongxian|r2_bus     ; |zjw_zongxian|r2_bus      ; out              ;
+; |zjw_zongxian|k[1]       ; |zjw_zongxian|k[1]        ; out              ;
+; |zjw_zongxian|k[2]       ; |zjw_zongxian|k[2]        ; out              ;
+; |zjw_zongxian|k[3]       ; |zjw_zongxian|k[3]        ; out              ;
+; |zjw_zongxian|k[4]       ; |zjw_zongxian|k[4]        ; out              ;
+; |zjw_zongxian|lddr[1]    ; |zjw_zongxian|lddr[1]     ; out              ;
+; |zjw_zongxian|l[0]       ; |zjw_zongxian|l[0]        ; out              ;
+; |zjw_zongxian|l[0]       ; |zjw_zongxian|l[0]~result ; pin_out          ;
+; |zjw_zongxian|l[1]       ; |zjw_zongxian|l[1]        ; out              ;
+; |zjw_zongxian|l[1]       ; |zjw_zongxian|l[1]~result ; pin_out          ;
+; |zjw_zongxian|l[2]       ; |zjw_zongxian|l[2]        ; out              ;
+; |zjw_zongxian|l[2]       ; |zjw_zongxian|l[2]~result ; pin_out          ;
+; |zjw_zongxian|l[3]       ; |zjw_zongxian|l[3]        ; out              ;
+; |zjw_zongxian|l[3]       ; |zjw_zongxian|l[3]~result ; pin_out          ;
+; |zjw_zongxian|l[4]       ; |zjw_zongxian|l[4]        ; out              ;
+; |zjw_zongxian|l[4]       ; |zjw_zongxian|l[4]~result ; pin_out          ;
+; |zjw_zongxian|l[5]       ; |zjw_zongxian|l[5]        ; out              ;
+; |zjw_zongxian|l[5]       ; |zjw_zongxian|l[5]~result ; pin_out          ;
+; |zjw_zongxian|l[6]       ; |zjw_zongxian|l[6]        ; out              ;
+; |zjw_zongxian|l[6]       ; |zjw_zongxian|l[6]~result ; pin_out          ;
+; |zjw_zongxian|l[7]       ; |zjw_zongxian|l[7]        ; out              ;
+; |zjw_zongxian|l[7]       ; |zjw_zongxian|l[7]~result ; pin_out          ;
+; |zjw_zongxian|l[7]~8     ; |zjw_zongxian|l[7]~8      ; out0             ;
+; |zjw_zongxian|l[6]~9     ; |zjw_zongxian|l[6]~9      ; out0             ;
+; |zjw_zongxian|l[5]~10    ; |zjw_zongxian|l[5]~10     ; out0             ;
+; |zjw_zongxian|l[4]~11    ; |zjw_zongxian|l[4]~11     ; out0             ;
+; |zjw_zongxian|l[3]~12    ; |zjw_zongxian|l[3]~12     ; out0             ;
+; |zjw_zongxian|l[2]~13    ; |zjw_zongxian|l[2]~13     ; out0             ;
+; |zjw_zongxian|l[1]~14    ; |zjw_zongxian|l[1]~14     ; out0             ;
+; |zjw_zongxian|l[0]~15    ; |zjw_zongxian|l[0]~15     ; out0             ;
++--------------------------+---------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Mar 01 13:02:31 2020
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off zjw_zongxian -c zjw_zongxian
+Info: Using vector source file "C:/Users/apple/Desktop/×ÜÏß/zjw_zongxian_vhdl/zjw_zongxian.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      24.65 %
+Info: Number of transitions in simulation is 197
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 163 megabytes
+    Info: Processing ended: Sun Mar 01 13:02:33 2020
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:01
+
+

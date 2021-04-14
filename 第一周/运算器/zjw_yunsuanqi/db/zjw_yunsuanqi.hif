@@ -1,0 +1,126 @@
+Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+11
+910
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+74244
+# storage
+db|zjw_yunsuanqi.(1).cnf
+db|zjw_yunsuanqi.(1).cnf
+# case_insensitive
+# source_file
+b:|quartus|libraries|others|maxplus2|74244.bdf
+b991c4e54d71024b356407b6c66fc4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74244:inst6
+74244:inst5
+}
+# macro_sequence
+
+# end
+# entity
+74374
+# storage
+db|zjw_yunsuanqi.(2).cnf
+db|zjw_yunsuanqi.(2).cnf
+# case_insensitive
+# source_file
+b:|quartus|libraries|others|maxplus2|74374.bdf
+a56b17bdd2cc8a58faa0ca93b8a3a3
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74374:inst1
+74374:inst
+}
+# macro_sequence
+
+# end
+# entity
+74181
+# storage
+db|zjw_yunsuanqi.(3).cnf
+db|zjw_yunsuanqi.(3).cnf
+# case_insensitive
+# source_file
+b:|quartus|libraries|others|maxplus2|74181.bdf
+5a7a42864d75db2f39a1f2da31e3e53
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74181:inst4
+74181:inst7
+}
+# macro_sequence
+
+# end
+# entity
+74273
+# storage
+db|zjw_yunsuanqi.(4).cnf
+db|zjw_yunsuanqi.(4).cnf
+# case_insensitive
+# source_file
+b:|quartus|libraries|others|maxplus2|74273.bdf
+43247217913d17ab51bbea92feb3e38
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+74273:inst3
+74273:inst2
+}
+# macro_sequence
+
+# end
+# entity
+zjw_yunsuanqi
+# storage
+db|zjw_yunsuanqi.(0).cnf
+db|zjw_yunsuanqi.(0).cnf
+# case_insensitive
+# source_file
+zjw_yunsuanqi.bdf
+eddfa782fb0e619a2c077c83b8c1ff
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
